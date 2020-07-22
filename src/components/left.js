@@ -7,11 +7,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 function Left() {
   return (
     <div className="left-section">
-      <nav>
+      <nav className='justify-content-center'>
         <span className='nav-links'>
             <a className='iconSwitch'>
                 {/* <i className="fas fa-home"></i>Home */}
-                <FontAwesomeIcon icon='home' size="lg"/> {/* Home */}
+                <FontAwesomeIcon icon='home' size="lg" className='active'/> {/* Home */}
             </a>
         </span>
         <span>
