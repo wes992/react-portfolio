@@ -9,31 +9,31 @@ function Left() {
     <div className="left-section">
       <nav className='justify-content-center'>
         <span className='nav-links'>
-            <a className='iconSwitch'>
+            <a href='/'className='iconSwitch'>
                 {/* <i className="fas fa-home"></i>Home */}
-                <FontAwesomeIcon icon='home' size="lg" className='active'/> {/* Home */}
+                <FontAwesomeIcon icon='home' size="lg"/> {/* Home */}
             </a>
         </span>
         <span>
-            <a className='iconSwitch'>
+            <a href='/about' className='iconSwitch'>
                 {/* <i className="fas fa-home"></i>Home */}
                 <FontAwesomeIcon icon='user' size="lg"/> {/* About */}
             </a>
         </span>
         <span>
-            <a className='iconSwitch'>
+            <a href='/skills' className='iconSwitch'>
                 {/* <i className="fas fa-home"></i>Home */}
                 <FontAwesomeIcon icon='toolbox' size="lg"/> {/* Skills */}
             </a>
         </span>
         <span>
-            <a className='iconSwitch'>
+            <a href='/projects' className='iconSwitch'>
                 {/* <i className="fas fa-home"></i>Home */}
                 <FontAwesomeIcon icon='tasks' size="lg"/> {/* Projects */}
             </a>
         </span>
         <span>
-            <a className='iconSwitch'>
+            <a href='/contact' className='iconSwitch'>
                 {/* <i className="fas fa-home"></i>Home */}
                 <FontAwesomeIcon icon='paper-plane' size="lg"/> {/* Contact */}
             </a>

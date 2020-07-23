@@ -5,6 +5,7 @@
   height: auto;
   width: auto;
   background-color: #1d1d1d;
+  color: #c5c5c5;
 }
 
 .active {
@@ -17,6 +18,63 @@
   color: #fff;
   background-color: #181818;
   text-align: center;
+}
+
+.body-container {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  margin: auto;
+  width: 600px;
+  color: #c5c5c5;
+  text-align: left;
+}
+
+.h1-animation {
+  text-align: left;
+}
+
+.wordSpace {
+  margin-right: 2%;
+}
+
+.iconSwitch {
+  height: 75px;
+  padding-top: 10px;
+}
+
+.rubberBand {
+  -webkit-animation-name: rubberBand;
+  animation-name: rubberBand;
+}
+
+.slide {
+  position: relative;
+  left: -500px;
+  -webkit-animation: slide 0.5s forwards;
+  -webkit-animation-delay: 2s;
+  animation: slide 1s forwards;
+  animation-delay: 0.5s;
+}
+
+.fade-in {
+  /* left: -400px; */
+  -webkit-animation: fade-in 4s forwards;
+  -webkit-animation-delay: 4s;
+  animation: fade-in 4s forwards;
+  animation-delay: 1.5s;
+}
+
+.delay1 {
+  animation-delay: 1.0s;
+}
+
+.delay2 {
+  animation-delay: 1.5s;
+}
+
+#header-bg-dark {
+  background: #181818 !important;
 }
 
 span.letter {
@@ -33,49 +91,27 @@ span.letter:hover {
   color: #0cdbff;
 }
 
-.body-container {
-  position: absolute;
-  top: 30%;
-  left: 10%;
-  margin: auto;
-  width: 300px;
-  color: #c5c5c5;
-  text-align: left;
-}
-
-.h1-animation {
-  text-align: left;
-}
-
-.wordSpace {
-  margin-right: 2%;
-}
-
-#header-bg-dark {
-  background: #181818 !important;
-}
 
 p.fade-in { 
   opacity: 0;
 }
 
-.iconSwitch {
-  height: 75px;
-  padding-top: 10px;
-
-  /* animation-duration: 1s;
-  animation-fill-mode: both;
-  animation-iteration-count: 1; */
-}
 
 nav a {
   display: block;
+  color: #c5c5c5;
 }
 
 span a.iconSwitch:hover {
   /* animation-name: rubberBand; */
   color: #0cdbff;
 }
+
+span a.iconSwitch:visited {
+  text-decoration: none;
+}
+
+
 
 @keyframes rubberBand {
   from {
@@ -106,41 +142,6 @@ span a.iconSwitch:hover {
     transform: scale3d(1, 1, 1);
   }
 }
-
-.rubberBand {
-  -webkit-animation-name: rubberBand;
-  animation-name: rubberBand;
-}
-
-.slide {
-  position: relative;
-  left: -400px;
-  -webkit-animation: slide 0.5s forwards;
-  -webkit-animation-delay: 2s;
-  animation: slide 1s forwards;
-  animation-delay: 0.5s;
-}
-
-
-.fade-in {
-  /* left: -400px; */
-  -webkit-animation: fade-in 4s forwards;
-  -webkit-animation-delay: 4s;
-  animation: fade-in 4s forwards;
-  animation-delay: 2.5s;
-}
-
-.delay1 {
-  animation-delay: 1.0s;
-}
-
-.delay2 {
-  animation-delay: 1.5s;
-}
-
-/* .delay3 {
-  animation-delay: 2s;
-} */
 
 
 @-webkit-keyframes slide {

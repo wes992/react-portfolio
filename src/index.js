@@ -8,8 +8,8 @@ import "bootstrap/dist/js/bootstrap.min.js";
 import "./index.css";
 
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { fas } from '@fortawesome/free-solid-svg-icons';
+import { faHome, faUser, faTasks, faToolbox, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 
-library.add(fas);
+library.add(faHome, faUser, faTasks, faToolbox, faPaperPlane);
 
 ReactDOM.render(<App />, document.getElementById("root"));
