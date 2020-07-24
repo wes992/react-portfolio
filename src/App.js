@@ -1,7 +1,8 @@
 import React from "react";
-// import Header from "./components/header";
+
 import Left from "./components/left";
-import Body from './components/body';
+// import Body from './components/body';
+import Text from './components/Text';
 import About from './pages/about';
 import Projects from './pages/projects';
 import Skills from './pages/skills';
@@ -23,14 +24,13 @@ const App = () => {
         case '/contact':
            return <Contact />;
         default:
-          return <Body />
+          return <Text>Hi, I'm Wes, a web developer.</Text>
       }
     }
 
   return (
     <div className="App">
       { renderPages() }
-      {/* <Header /> */}
       <Left />
     </div>    
   );

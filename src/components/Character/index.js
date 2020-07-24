@@ -12,12 +12,12 @@ const Character = styled.span`
     }
   }
 
-  color: black;
+  color: #c5c5c5;
   display: inline-block;
-  font-family: dm, Menlo, Monaco, "Courier New", monospace;
-  font-size: 18px;
+  font-family: script;
+  font-size: 36px;
   min-width: 5px;
-  ${props => {
+  ${(props) => {
     switch (props.state) {
       case 'exiting':
       case 'entered':

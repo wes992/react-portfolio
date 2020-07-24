@@ -77,16 +77,18 @@
   background: #181818 !important;
 }
 
-span.letter {
+span.sc-AxjAm {
   display: inline-block;
   color: #c5c5c5;
 
+  /* animation-play-state: running; */
+  /* animation-name: rubberBand; */
   animation-duration: 1s;
   animation-fill-mode: both;
   animation-iteration-count: 1;
 }
 
-span.letter:hover {
+span.sc-AxjAm:hover {
   animation-name: rubberBand;
   color: #0cdbff;
 }
