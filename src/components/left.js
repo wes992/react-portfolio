@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 
 import React from "react";
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
@@ -9,21 +10,24 @@ function Left() {
     <div className="left-section">
       <nav className='justify-content-center'>
         <span className='nav-links'>
-            <a href='/'className='iconSwitch'>
+            <Link to='/' classname='llink'>
+              <h3 className='logo iconSwitch'>W</h3>
+            </Link>
+            <Link to='/' className='iconSwitch'>
                 <FontAwesomeIcon icon='home' size="lg"/> {/* Home */}
-            </a>
-            <a href='/about' className='iconSwitch'>
+            </Link>
+            <Link to='/about' className='iconSwitch'>
                 <FontAwesomeIcon icon='user' size="lg"/> {/* About */}
-            </a>
-            <a href='/skills' className='iconSwitch'>
+            </Link>
+            <Link to='/skills' className='iconSwitch'>
                 <FontAwesomeIcon icon='toolbox' size="lg"/> {/* Skills */}
-            </a>
-            <a href='/projects' className='iconSwitch'>
+            </Link>
+            <Link to='/projects' className='iconSwitch'>
                 <FontAwesomeIcon icon='tasks' size="lg"/> {/* Projects */}
-            </a>
-            <a href='/contact' className='iconSwitch'>
+            </Link>
+            <Link to='/contact' className='iconSwitch'>
                 <FontAwesomeIcon icon='paper-plane' size="lg"/> {/* Contact */}
-            </a>
+            </Link>
         </span>
       </nav>
     </div>

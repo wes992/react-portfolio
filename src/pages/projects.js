@@ -1,11 +1,10 @@
 import React from 'react';
+import FlipCard from '../components/FlipCard/FlipCard';
 
 const Projects = () => {
     return(
         <div className='body-container'>
-            <h1 className="h1-animation slide">            
-                project page
-            </h1>
+            <FlipCard />
         </div>
     )
 }

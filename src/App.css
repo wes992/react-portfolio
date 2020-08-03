@@ -14,6 +14,13 @@
   color: #c5c5c5;
 }
 
+.logo {
+  color: #0cdbff;
+  font-family: 'WoodwarriorRegular';
+  font-weight: normal;
+  font-style: normal;
+}
+
 .active {
   color: #0cdbff;
 }
@@ -115,12 +122,12 @@ nav a {
   color: #c5c5c5;
 }
 
-span a.iconSwitch:hover {
+.iconSwitch:hover {
   /* animation-name: rubberBand; */
   color: #0cdbff;
 }
 
-span a.iconSwitch:visited {
+.iconSwitch:visited {
   text-decoration: none;
 }
 
