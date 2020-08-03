@@ -1,8 +1,14 @@
+/* html,body {
+  height: 100vh;
+  margin: none;
+  padding: none;
+} */
+
 .App {
   text-align: center;
   margin: 0;
   padding: 0;
-  height: auto;
+  height: 100vh;
   width: auto;
   background-color: #1d1d1d;
   color: #c5c5c5;
@@ -14,7 +20,7 @@
 
 .left-section {
   width: 7%;
-  height: 700px;
+  height: 100vh;
   color: #fff;
   background-color: #181818;
   text-align: center;
@@ -22,7 +28,7 @@
 
 .body-container {
   position: absolute;
-  top: 30%;
+  top: 20%;
   left: 10%;
   margin: auto;
   width: 600px;
@@ -73,6 +79,7 @@
   animation-delay: 1.5s;
 }
 
+
 #header-bg-dark {
   background: #181818 !important;
 }
@@ -95,6 +102,10 @@ span.sc-AxjAm:hover {
 
 
 p.fade-in { 
+  opacity: 0;
+}
+
+form.fade-in { 
   opacity: 0;
 }
 
