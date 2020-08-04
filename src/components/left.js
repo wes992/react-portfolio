@@ -10,7 +10,7 @@ function Left() {
     <div className="left-section">
       <nav className='justify-content-center'>
         <span className='nav-links'>
-            <Link to='/' classname='llink'>
+            <Link to='/'>
               <h3 className='logo iconSwitch'>W</h3>
             </Link>
             <Link to='/' className='iconSwitch'>

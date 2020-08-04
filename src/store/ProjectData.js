@@ -1,22 +1,22 @@
- const ProjectData = [
-
+ export const ProjectData = [
     {
         _id: '1',
-        title: 'YelpCamp',
+        title: 'Yelp Camp',
         image: "http://via.placeholder.com/200x125",
+        description: 'Campsite Rental App that lets you search for and rent campsites near you',
         techStack: 'Mongo, Express, Node'
     },
     {
         _id: '2',
-        title: 'RentWithMe',
+        title: 'Rent With Me',
         image: "http://via.placeholder.com/200x125",
-        techStack: 'Mongo, Express, Angular, Node'
+        techStack: 'Mongo, Express, Angular, Node (MEAN)'
     },
     {
         _id: '3',
-        title: 'YelpCamp',
+        title: 'Rent With Me',
         image: "http://via.placeholder.com/200x125",
-        techStack: 'Mongo, Express, React, Node'
+        techStack: 'Mongo, Express, React, Node (MERN)'
     }
 ]
 

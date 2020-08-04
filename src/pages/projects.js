@@ -1,12 +1,38 @@
-import React from 'react';
+import React, { Component } from 'react';
 import FlipCard from '../components/FlipCard/FlipCard';
+import connect from '../store/connect';
+import fetchProjects from '../actions';
 
-const Projects = () => {
-    return(
-        <div className='body-container'>
-            <FlipCard />
-        </div>
-    )
+class Projects extends Component {
+
+    componentDidMount() {
+        this.props.dispatch(fetchProjects());
+    }
+
+    renderProjects = (projects) => 
+    projects.map(project => 
+         <div key={project._id} className="col-md-4 p-3">
+             <FlipCard project={project}/>
+         </div>
+    );
+     
+    render() {
+         const { projects } = this.props;
+
+        return(
+            <div className="project-container container-fluid card-list">
+                <div className="row justify-content-center">
+                    {this.renderProjects(projects)}
+                </div>
+            </div>
+        )
+    }
 }
 
-export default Projects;
+const mapStateToProps = (state) => {
+    return {
+      projects: state.projects
+    }
+}
+
+export default connect(mapStateToProps)(Projects);
