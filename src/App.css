@@ -6,8 +6,17 @@ html {
 }
 
 body {
-  min-height: 100%;
-  min-width: 100%;
+  /* text-align: center; */
+  /* margin: 0; */
+  padding: 0;
+  min-height: 100vh;
+  /* width:100%; */
+  background-color: #1d1d1d!important;
+  color: #c5c5c5;
+}
+
+#secondary-nav {
+  display: none;
 }
 
 .App {
@@ -26,19 +35,14 @@ body {
   color: #fff;
   background-color: #181818;
   text-align: center;
+  /* float: left; */
 }
 
-.logo {
-  color: #0cdbff;
+#logo {
+  color: #cdcdcd;
   font-family: 'WoodwarriorRegular';
   font-weight: normal;
   font-style: normal;
-  margin-left: 20px;
-  transform: rotateZ(-90deg);
-}
-
-.active {
-  color: #0cdbff;
 }
 
 
@@ -46,7 +50,6 @@ body {
   position: absolute;
   top: 20%;
   left: 10%;
-  /* margin-top: 50px ; */
   min-width: 300px;
   max-width: 600px;
   color: #c5c5c5;
@@ -54,9 +57,10 @@ body {
 }
 
 .project-container {
-  max-width: 80%;
-  position: relative;
-  top: -450px;
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  max-width: 80%
 }
 
 .h1-animation {
@@ -69,7 +73,6 @@ body {
 
 .iconSwitch {
   height: 75px;
-  padding-top: 10px;
 }
 
 .rubberBand {
@@ -105,9 +108,6 @@ body {
 span.sc-AxjAm {
   display: inline-block;
   color: #c5c5c5;
-
-  /* animation-play-state: running; */
-  /* animation-name: rubberBand; */
   animation-duration: 1s;
   animation-fill-mode: both;
   animation-iteration-count: 1;
@@ -134,7 +134,7 @@ nav a {
 }
 
 .iconSwitch:hover {
-  /* animation-name: rubberBand; */
+  animation-name: rubberBand;
   color: #0cdbff;
 }
 
@@ -142,7 +142,15 @@ nav a {
   text-decoration: none;
 }
 
+@media (max-width: 768px) {
+  #secondary-nav {
+      display: block;
+  }
 
+  #primary-nav {
+      display: none;
+  }
+}
 
 @keyframes rubberBand {
   from {

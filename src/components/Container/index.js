@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const Body = styled.div`
   overflow: hidden;
   position: absolute;
-  top: 30%;
+  top: 20%;
   left: 10%;
   margin: auto;
   width: 600px;

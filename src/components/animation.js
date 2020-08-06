@@ -34,7 +34,7 @@ function Animation() {
                 <span className="letter">.</span>
             </div>
         </h1>
-        <p className='delay3 fade-in'>Full-Stack | Jr. Dev | Freelancer</p>
+        <p className='delay3 fade-in'>Full-Stack | Jr. Dev | Self-taught</p>
     </div>
     )
 }

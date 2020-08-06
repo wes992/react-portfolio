@@ -11,7 +11,7 @@ class Projects extends Component {
 
     renderProjects = (projects) => 
     projects.map(project => 
-         <div key={project._id} className="col-md-4 p-3">
+         <div key={project._id} className="col-md-4 col-lg-3 p-3">
              <FlipCard project={project}/>
          </div>
     );
@@ -21,7 +21,7 @@ class Projects extends Component {
 
         return(
             <div className="project-container container-fluid card-list">
-                <div className="row justify-content-center">
+                <div className="row">
                     {this.renderProjects(projects)}
                 </div>
             </div>
