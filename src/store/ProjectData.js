@@ -3,20 +3,25 @@
         _id: '1',
         title: 'Yelp Camp',
         image: "http://via.placeholder.com/200x125",
-        description: 'Campsite Rental App that lets you search for and rent campsites near you',
-        techStack: 'Mongo, Express, Node'
+        description: 'Campsite Rental App to search for and book local campgrounds',
+        techStack: 'Mongo, Express, Node',
+        demo: "http://via.placeholder.com/200x125"
     },
     {
         _id: '2',
         title: 'Rent With Me',
         image: "http://via.placeholder.com/200x125",
-        techStack: 'Mongo, Express, Angular, Node (MEAN)'
+        description: 'Air-BNB clone application to search for and book housing on trips',
+        techStack: 'Mongo, Express, Angular, Node (MEAN)',
+        demo: "http://via.placeholder.com/200x125"
     },
     {
         _id: '3',
         title: 'Rent With Me',
         image: "http://via.placeholder.com/200x125",
-        techStack: 'Mongo, Express, React, Node (MERN)'
+        description: 'Air-BNB clone application to search for and book housing on trips',
+        techStack: 'Mongo, Express, React, Node (MERN)',
+        demo: "http://via.placeholder.com/200x125"
     }
 ]
 

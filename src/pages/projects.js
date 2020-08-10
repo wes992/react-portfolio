@@ -5,13 +5,14 @@ import fetchProjects from '../actions';
 
 class Projects extends Component {
 
+
     componentDidMount() {
         this.props.dispatch(fetchProjects());
     }
 
     renderProjects = (projects) => 
     projects.map(project => 
-         <div key={project._id} className="col-md-4 col-lg-3 p-3">
+         <div key={project._id} className="col-sm-6 col-md-4 p-3">
              <FlipCard project={project}/>
          </div>
     );

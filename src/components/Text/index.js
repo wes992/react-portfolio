@@ -6,7 +6,7 @@ import Container from '../Container';
 const Text = ({ children }) => (
   <Container>
     <AnimatedText>{children}</AnimatedText>
-    {/* <h5 className= 'delay2 fade-in' style={{opacity: 0}}>Full-stack | Jr. Dev | Self-taught </h5> */}
+    <h5 className= 'delay2 fade-in' style={{opacity: 0}}>Full-stack | Jr. Dev | Self-taught </h5>
   </Container>
 );
 

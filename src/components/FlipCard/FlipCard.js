@@ -1,6 +1,6 @@
 import React from 'react';
-// import ProjectData from '../../store/ProjectData';
-import './FlipCard.css'
+import './FlipCard.css';
+
 
 const FlipCard = ({project}) => {
         return ( 
@@ -16,11 +16,11 @@ const FlipCard = ({project}) => {
                 <div className="flip-card-back">
                     <h3>{project.title}</h3>
                     <p>{project.description}</p>
-                    <a href='http://google.com' target='_blank'>Demo</a>
+                    <a href="http://via.placeholder.com/200x125" target='_blank'>Demo</a>
                 </div>
             </div>
         </div>
         );
     }
  
-export default FlipCard;
+export default FlipCard

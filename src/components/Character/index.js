@@ -14,9 +14,7 @@ const Character = styled.span`
 
   color: #c5c5c5;
   display: inline-block;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-  sans-serif;
+  font-family: cursive;
   font-size: 36px;
   min-width: 5px;
   ${(props) => {

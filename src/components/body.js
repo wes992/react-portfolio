@@ -1,10 +1,13 @@
 import React from 'react';
-import Animation from './animation';
+import Text from './Text';
+// import Animation from './animation';
 
 function Body() {
     return (
         <div className='body'>
-            <Animation />
+            <Text>Hello,
+                I'm Wes, 
+                a Web Developer</Text>
         </div>
     );
 }

@@ -19,6 +19,7 @@ function Animation() {
                 <span className="letter">,</span><br/>
             </div>
             <div className='slide delay2'>
+                <span className="letter wordSpace">a</span>
                 <span className="letter">w</span>
                 <span className="letter">e</span>
                 <span className="letter wordSpace">b</span> 

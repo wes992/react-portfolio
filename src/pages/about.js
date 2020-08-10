@@ -1,9 +1,11 @@
 import React from 'react';
+import Portrait from '../assets/Images/Hampton.jpg';
 
 function About() {
     return(
         <div className='body-container'>
             <div className="container-fluid">
+            <div className="container-fluid col-4 fade-in"><img className='portrait' src={Portrait} alt="photo of a man smiling"/></div>
             <h1 className="h1-animation slide col-12">
                 About:
             </h1>

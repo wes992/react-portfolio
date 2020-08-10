@@ -10,6 +10,7 @@ const Body = styled.div`
   color: #c5c5c5;
   text-align: left;
   font-weight: bold;
+  font-family: cursive;
 `;
 
 export default Body;
