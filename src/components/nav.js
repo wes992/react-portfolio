@@ -6,17 +6,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 	
 	class Nav extends Component {
-		
-		state = { 
-			isHovered: false
-		}
 	
 	render() { 
-		// console.log(this.state.isHovered)
 		return ( 
 			<div>
 			<nav id="primary-nav" className='pt-3'>
-				<ul className="nav flex-column justify-content-center pl-3">
+				<ul className="nav flex-column justify-content-center">
 					<Link to='/' className="iconSwitch nav-item">
 						<h3 id='logo'>W</h3>
 					</Link>
@@ -93,7 +88,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 		</div>
 
 );
-// console.log(this.state.isHovered)
 }
 }
 

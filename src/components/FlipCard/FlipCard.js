@@ -16,7 +16,8 @@ const FlipCard = ({project}) => {
                 <div className="flip-card-back">
                     <h3>{project.title}</h3>
                     <p>{project.description}</p>
-                    <a href="http://via.placeholder.com/200x125" target='_blank'>Demo</a>
+                    {/* eslint-disable-next-line */}
+                    <a href="#" target='_blank'>Demo</a>
                 </div>
             </div>
         </div>

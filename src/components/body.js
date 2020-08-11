@@ -5,7 +5,7 @@ import Text from './Text';
 function Body() {
     return (
         <div className='body'>
-            <Text>Hello,
+            <Text>Hello, 
                 I'm Wes, 
                 a Web Developer</Text>
         </div>

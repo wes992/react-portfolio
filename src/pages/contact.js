@@ -35,7 +35,7 @@ class Contact extends Component {
       render() {
         return(
           <div className='body-container'>
-              <h1 className="h1-animation slide">
+              <h1 className="slide">
                   Send me a Message
               </h1>
           <form id="contact-form" className='fade-in' onSubmit={this.handleSubmit.bind(this)} method="POST">

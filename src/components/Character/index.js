@@ -16,7 +16,7 @@ const Character = styled.span`
   display: inline-block;
   font-family: cursive;
   font-size: 36px;
-  min-width: 5px;
+  min-width: 10px;
   ${(props) => {
     switch (props.state) {
       case 'exiting':

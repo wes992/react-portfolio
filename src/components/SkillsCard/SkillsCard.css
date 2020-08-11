@@ -1,0 +1,38 @@
+.skillCard {
+    padding: 0!important;
+    text-align: center;
+    min-height: 200px;
+    min-width: 150px;
+    background-color: rgba(255,255,255,.4);
+}
+
+.top {
+    min-height: 50%;
+}
+
+.bottom {
+    max-width: 150px;
+    /* max-height: 100px; */
+}
+
+span.skillCardList {
+    text-align: left;
+    font-size: .75rem;
+    display: inline;
+}
+
+/* .skillCard:hover {
+    animation: raise 0.5s forwards 1;
+}
+
+@keyframes raise {
+    from {
+        transform: scale3d(0, 0, 0)
+    }
+    50% {
+        transform: scale3d(0.5, 0.5, 0.5)
+    }
+    to {
+        transform: scale3d(1.1, 1.1, 1.1)
+    }
+} */
