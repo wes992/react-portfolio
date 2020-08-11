@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './cube.css'
 
 class Cube extends Component {
     state = {  }

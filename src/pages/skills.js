@@ -1,5 +1,5 @@
 import React from 'react';
-import Cube from '../components/Cube';
+import Cube from '../components/Cube/Cube';
 import SkillsCard from '../components/SkillsCard/SkillsCard';
 
 const Skills = () => {
