@@ -5,34 +5,37 @@
   }
   
   .box-area {
-    animation: animate 15s ease-in-out infinite;
+    animation: animate 15s ease infinite;
     transform-style: preserve-3d;
     transform-origin: 75px 75px 0;
   }
-  
+
+  /* .box-area:hover {
+    animation-play-state: paused;
+  }
+   */
   .box-area div {
     position: absolute;
     width: 150px;
     height: 150px;
     line-height: 150px;
+    background-color: rgba(53, 53, 53, 0.2);
   }
   
   .box-area .front {
-    background-color: rgba(255,255,255, .2);
-    background-image: url('../../assets/icons/js.png');
+    background-image: url('../../assets/icons/react.png');
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center center;
     transform: translateZ(75px);
   }
   .box-area .back {
-    background-color: rgba(255,255,255, .2);
     background: url('../../assets/icons/node.png') center no-repeat;
+    /* background-color: rgba(51, 51, 51, 0.2); */
     transform: rotateY(90deg) translateZ(75px);
   }
   
   .box-area .left {
-    background-color: rgba(255,255,255, .2);
     background-image: url('../../assets/icons/angular.png');
     -webkit-background-size: cover;
     background-size: cover;
@@ -41,7 +44,6 @@
   }
   
   .box-area .right {
-    background-color: rgba(255,255,255, .2);
     background-image: url('../../assets/icons/DB.png');
     -webkit-background-size: cover;
     background-size: cover;
@@ -50,8 +52,7 @@
   }
   
   .box-area .top {
-    background-color: rgba(255,255,255, .2);
-    background-image: url('../../assets/icons/css3.png');
+    background-image: url('../../assets/icons/js.png');
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center center;
@@ -59,8 +60,7 @@
   }
   
   .box-area .bottom {
-    background-color: rgba(255,255,255, .2);
-    background-image: url('../../assets/icons/react.png');
+    background-image: url('../../assets/icons/css3.png');
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center center;

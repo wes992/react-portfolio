@@ -21,7 +21,7 @@ const Character = styled.span`
     switch (props.state) {
       case 'exiting':
       case 'entered':
-        return 'animation: rotate-in 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;';
+        return 'animation: rotate-in 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) forwards;';
       case 'entering':
       case 'exited':
         return 'opacity: 0;';

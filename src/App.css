@@ -10,6 +10,7 @@ body {
   min-height: 100vh;
   background-color: #1c1c1c!important;
   color: #c5c5c5;
+  /* overflow: hidden; */
 }
 
 #primary-nav {
@@ -26,8 +27,6 @@ body {
   font-family: 'WoodwarriorRegular';
   font-weight: normal;
   font-style: normal;
-
-  /* transform: rotateZ(90deg); */
 }
 
 
@@ -43,21 +42,96 @@ body {
   top: 20%;
   left: 10%;
   min-width: 300px;
-  /* max-width: 600px; */
   color: #c5c5c5;
   text-align: left;
 }
 
+/* .project-container {
+  color: #c5c5c5;
+  font-family: cursive;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  max-width: 90%
+} */
+
 .project-container {
+  color: #c5c5c5;
+  font-family: cursive;
   position: absolute;
   top: 20%;
   left: 10%;
   max-width: 90%
 }
 
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  min-height: 60vh;
+  grid-gap: 2rem;
+
+}
+
+#modal {
+  background: rgba(0, 0, 0, 0.7);
+  opacity: 0;  
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  transition: all 0.5s ease-out;
+}
+
+#modal.open {
+  opacity: 1;
+  pointer-events: all;
+}
+
+#modal a{
+  color: #0cdbff;
+  font-size: 1.5rem;
+  position: absolute;
+  bottom: 50%;
+  right: 10%;
+  transform: translate(-50%, -5%);
+  transition: all 0.5s ease-out;
+}
+
+.pop-up {
+  position: absolute;
+  height: 90%;
+  top: 5%;
+  left: 0%;
+  transform: scale(0.5);
+  transition: all 0.5s ease-out;
+}
+
+.pop-up.open {
+  transform: scale(1);
+}
+
+
+a.SourceCode:hover {
+  text-decoration: none;
+  animation: zoom 0.5s forwards;
+}
+
+
+@keyframes zoom {
+  from{
+    tranform: scale(1);
+  }
+  to{
+    transform: scale(1.1) translate(-50%, -5%);
+  }
+}
+
 .portrait {
   border-radius: 50%;
-  height: 100px;
+  height: 200px;
+  box-shadow: 0 0 5px #0cdbff;
 }
 
 .portrait:hover {
@@ -98,10 +172,6 @@ b {
   display: block;
 }
 
-/* span.letter:hover {
-  animation: rubberBand 500ms;
-} */
-
 .slide {
   position: relative;
   left: -500px;
@@ -130,17 +200,12 @@ b {
 span.sc-AxjAm {
   display: inline-block;
   color: #c5c5c5;
-  animation-duration: 1s;
-  /* animation-fill-mode: both; */
-  animation-iteration-count: 1;
-  
 }
 
 span.sc-AxjAm:hover {
-  animation-name: rubberBand;
+  animation: rubberBand 1s forwards;
   color: #0cdbff;
 }
-
 
 nav a {
   color: #c5c5c5;
@@ -151,7 +216,6 @@ nav a {
 }
 
 .iconSwitch:hover {
-  /* animation: rubberBand 1s; */
   text-decoration: none;
   color: #0cdbff;
 }

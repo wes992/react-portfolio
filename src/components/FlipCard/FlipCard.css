@@ -1,7 +1,7 @@
 .flip-card {
     background-color: transparent;
-    width: 200px;
-    height: 250px;
+    width: 175px;
+    height: 210px;
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
 
@@ -18,6 +18,7 @@
 /* Do an horizontal flip when you move the mouse over the flip box container */
 .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
+    cursor: pointer;
 }
 
 /* Position the front and back side */
@@ -32,18 +33,50 @@
   
   /* Style the front side (fallback if image is missing) */
   .flip-card-front {
-    background-color: #fff;
+    background-color: #343a40;
     color: #0cdbff;
     height: 100%;
   }
   
 .flip-card-front img {
-    border-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-size: cover;
+    max-width: 175px;
+    max-height: 125px;
 }
 
-  /* Style the back side */
-  .flip-card-back {
-    background-color: #0cdbff;
-    color: white;
-    transform: rotateY(180deg);
-  }
+/* Style the back side */
+.flip-card-back {
+  background-color: #343a40;
+  color: #0cdbff;
+  font-size: .9rem;
+  transform: rotateY(180deg);
+}
+
+.flip-card-back p {
+  margin-bottom: 0!important;
+}
+
+.button {
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 50%;
+  color: #0cdbff;
+  background-color: #343a40;
+  /* box-shadow: 0 0 15px steelblue inset; */
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%, -5%) scale(1);
+}
+
+.button:hover {
+  text-decoration: underline;
+  /* color: #0cdbff;
+  background-color: #f1f1f1; */
+}
+
+.button:focus {
+  outline: 0;
+}

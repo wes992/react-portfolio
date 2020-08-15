@@ -1,13 +1,12 @@
 import React from 'react';
 import Text from './Text';
-// import Animation from './animation';
 
 function Body() {
     return (
         <div className='body'>
             <Text>Hello, 
                 I'm Wes, 
-                a Web Developer</Text>
+                a Web Developer.</Text>
         </div>
     );
 }

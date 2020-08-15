@@ -8,15 +8,13 @@ const Skills = () => {
 					<div className="row">
 						<div className="col-6">
 							<h1 className="slide">
-									skills page
+									Some of my skills:
 							</h1>
-							<div className="row">
+							<div className="row fade-in">
 								<SkillsCard/>
-								{/* <SkillsCard/> */}
-								{/* <SkillsCard/> */}
 							</div>
 						</div>
-            <div className="wrapper col-6">
+            			<div className="wrapper col-6">
 							<Cube/>
 						</div>
 					</div>

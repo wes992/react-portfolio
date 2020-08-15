@@ -11,9 +11,10 @@ function About() {
 											About:
 									</h1>
 									<p className='fade-in'>
-											I'm a super techie at heart. I am a self taught Developer, with a primary skillset in Full Stack Web Development. 
+											I am a self taught Developer, with a primary skillset in Full Stack Web Development and a true techie at heart. 
 											I have built several sites from strictly front end with Angular or React to Full-Stack sites with a Mongo and Node Backend.
-											I am always looking to expand my knowledge and take on a new challenge. 
+											I absolutely love what I do and I welcome the challenge that comes along with learning new skills. 
+											I am always looking to expand my knowledge and take on a new obstacle. 
 									</p>
 								</div>
             		<div className="col-4 fade-in">
