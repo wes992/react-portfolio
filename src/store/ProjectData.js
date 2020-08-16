@@ -9,7 +9,8 @@ const images = require.context('../assets/Images', true);
         description: 'Campsite Rental App to search for and book local campgrounds',
         techStack: 'Mongo, Express, Node',
         demo: images('./YelpCamp.png'),
-        link: 'https://github.com/wes992/YelpCamp'
+        repo: 'https://github.com/wes992/YelpCamp',
+        link: 'https://campsiterentals.herokuapp.com'
     },
     {
         _id: '2',
@@ -18,7 +19,8 @@ const images = require.context('../assets/Images', true);
         description: 'Air-BNB clone application to search for and book housing on trips',
         techStack: 'Mongo, Express, Angular, Node (MEAN)',
         demo: images('./RWM_Snip.png'),
-        link: 'https://github.com/wes992/Bookwithme'
+        repo: 'https://github.com/wes992/Bookwithme',
+        link: 'https://rentwithme.herokuapp.com'
     },
     {
         _id: '3',
@@ -27,7 +29,8 @@ const images = require.context('../assets/Images', true);
         description: 'Air-BNB clone application to search for and book housing on trips',
         techStack: 'Mongo, Express, React, Node (MERN)',
         demo: images('./RWM_Snip.png'),
-        link: 'https://github.com/wes992/React-RWM'
+        repo: 'https://github.com/wes992/React-RWM',
+        link: 'https://rentwithme.herokuapp.com'
     },
     {
         _id: '4',
@@ -36,7 +39,8 @@ const images = require.context('../assets/Images', true);
         description: 'Interactive site that has randomly generated circles & tones played on keypress',
         techStack: 'Jquery, paperJS, Canvas, JS Scripts',
         demo: images('./patatap.png'),
-        link: 'https://github.com/wes992/patatapClone'
+        repo: 'https://github.com/wes992/patatapClone',
+        link: 'https://wes992.github.io/patatapClone/'
     },
     {
         _id: '5',
@@ -45,7 +49,8 @@ const images = require.context('../assets/Images', true);
         description: 'Interactive game that aids in guessing RGB color codes',
         techStack: 'Jquery, JS Scripts, Event Listeners',
         demo: images('./ColorGame.png'),
-        link: 'https://github.com/wes992/RGB-Game'
+        repo: 'https://github.com/wes992/RGB-Game',
+        link: 'https://wes992.github.io/RGB-Game/'
     },
     {
         _id: '6',
@@ -54,7 +59,8 @@ const images = require.context('../assets/Images', true);
         description: 'Todo list built with Jquery, that uses scripts to manipulate classes',
         techStack: 'Jquery, JS Scripts, HTML/CSS',
         demo: images('./todoList.png'),
-        link: 'https://github.com/wes992/To-Do-List'
+        repo: 'https://github.com/wes992/To-Do-List',
+        link: 'https://wes992.github.io/To-Do-List/'
     }
 ]
 

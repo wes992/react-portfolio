@@ -17,7 +17,7 @@ const AnimatedText = ({ children }) =>
       {() => (
         <TransitionGroup appear={true} component={null}>
           <Transition
-            timeout={key * 125}
+            timeout={key * 80}
             key={letter.concat(key)}
           >
             {state => (

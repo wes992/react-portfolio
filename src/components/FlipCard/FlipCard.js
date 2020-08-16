@@ -8,6 +8,7 @@ const FlipCard = ({project}) => {
         const buttons = document.querySelectorAll(".button");
         const popup = document.querySelector(".pop-up");
         const sourceCode = document.querySelector(".SourceCode");
+        const tryItOut = document.querySelector(".tryItOut");
     
         buttons.forEach((button) => {
             button.addEventListener('click', () => {
@@ -16,10 +17,8 @@ const FlipCard = ({project}) => {
                 
                 const gif = button.getAttribute('data-original');
                 popup.src=gif;
-                sourceCode.href = project.link;
-                // console.log('project link is ' + project.link);
-                // console.log('SourceCode link is ' + sourceCode.href);
-
+                sourceCode.href = project.repo;
+                tryItOut.href = project.link
             });
         });
     

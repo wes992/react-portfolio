@@ -10,11 +10,22 @@ body {
   min-height: 100vh;
   background-color: #1c1c1c!important;
   color: #c5c5c5;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 #primary-nav {
   text-align: center;
+  min-height: 100vh;
+  max-width: 8%;
+  overflow: hidden;
+}
+
+#primary-nav ul {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-around;
 }
 
 #secondary-nav {
@@ -23,7 +34,7 @@ body {
 
 
 #logo {
-  color: #cdcdcd;
+  color: #c5c5c5;
   font-family: 'WoodwarriorRegular';
   font-weight: normal;
   font-style: normal;
@@ -59,17 +70,19 @@ body {
   color: #c5c5c5;
   font-family: cursive;
   position: absolute;
-  top: 20%;
+  top: 13%;
   left: 10%;
-  max-width: 90%
+  max-width: 95%;
+  /* overflow-y: hidden; */
 }
 
 .project-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   min-height: 60vh;
-  grid-gap: 2rem;
-
+  grid-gap: 1.5rem;
+  position: relative;
+  right: 2%;
 }
 
 #modal {
@@ -89,15 +102,26 @@ body {
   pointer-events: all;
 }
 
-#modal a{
+#modal a.SourceCode{
   color: #0cdbff;
   font-size: 1.5rem;
   position: absolute;
-  bottom: 50%;
+  top: 25%;
   right: 10%;
   transform: translate(-50%, -5%);
   transition: all 0.5s ease-out;
 }
+
+#modal a.tryItOut{
+  color: #0cdbff;
+  font-size: 1.5rem;
+  position: absolute;
+  bottom: 25%;
+  right: 10%;
+  transform: translate(-50%, -5%);
+  transition: all 0.5s ease-out;
+}
+
 
 .pop-up {
   position: absolute;
@@ -114,6 +138,11 @@ body {
 
 
 a.SourceCode:hover {
+  text-decoration: none;
+  animation: zoom 0.5s forwards;
+}
+
+a.tryItOut:hover {
   text-decoration: none;
   animation: zoom 0.5s forwards;
 }
@@ -145,7 +174,7 @@ a.SourceCode:hover {
 }
 
 .iconSwitch {
-  height: 75px;
+  height: 60px;
 }
 
 .rubberBand {
@@ -183,19 +212,19 @@ b {
 
 .fade-in {
   -webkit-animation: fade-in 4s forwards;
-  -webkit-animation-delay: 4s;
+  -webkit-animation-delay: 1s;
   animation: fade-in 4s forwards;
-  animation-delay: 1.5s;
+  animation-delay: 1s;
   opacity: 0;
 }
 
-.delay1 {
+/* .delay1 {
   animation-delay: 1.0s;
 }
 
 .delay2 {
   animation-delay: 1.5s;
-}
+} */
 
 span.sc-AxjAm {
   display: inline-block;
@@ -211,10 +240,6 @@ nav a {
   color: #c5c5c5;
 }
 
-#primary-nav {
-  max-width: 10%;
-}
-
 .iconSwitch:hover {
   text-decoration: none;
   color: #0cdbff;
@@ -227,10 +252,19 @@ nav a {
 @media (max-width: 768px) {
   #secondary-nav {
       display: block;
+      background-color: #1c1c1c;
+      z-index: 1;
+      position: fixed;
+      top: 0;
+      height: 9%;
+      width: 100%;
   }
 
   #primary-nav {
       display: none;
+  }
+  body {
+    overflow-y: auto;
   }
 }
 

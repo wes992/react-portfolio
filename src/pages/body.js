@@ -1,5 +1,6 @@
 import React from 'react';
-import Text from './Text';
+import Text from '../components/Text';
+// import Social from '../components/Social/Social';
 
 function Body() {
     return (
@@ -7,6 +8,7 @@ function Body() {
             <Text>Hello, 
                 I'm Wes, 
                 a Web Developer.</Text>
+            {/* <Social/> */}
         </div>
     );
 }

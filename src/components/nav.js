@@ -10,8 +10,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 	render() { 
 		return ( 
 			<div>
-			<nav id="primary-nav" className='pt-3'>
-				<ul className="nav flex-column justify-content-center">
+			<nav id="primary-nav">
+				<ul className="nav">
 					<Link to='/' className="iconSwitch nav-item">
 						<h3 id='logo'>W</h3>
 					</Link>

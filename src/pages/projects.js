@@ -29,6 +29,7 @@ class Projects extends Component {
                 </div>
                 <div id="modal" className='modalWindow'>
                     <a href="#" target='_blank' className='SourceCode'>Source Code</a>
+                    <a href="#" target='_blank' className='tryItOut'>Try it out!</a>
                     <img src='' alt="Gif of a website being navigated" className="pop-up"/>
                 </div>
             </div>

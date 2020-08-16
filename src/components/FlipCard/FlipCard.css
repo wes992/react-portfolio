@@ -60,10 +60,11 @@
 
 .button {
   font-size: 1.5rem;
+  padding: 5px;
   border: none;
   border-radius: 50%;
   color: #0cdbff;
-  background-color: #343a40;
+  background-color: transparent;
   /* box-shadow: 0 0 15px steelblue inset; */
   position: absolute;
   bottom: 5%;
@@ -72,9 +73,10 @@
 }
 
 .button:hover {
-  text-decoration: underline;
+  /* text-decoration: underline; */
   /* color: #0cdbff;
   background-color: #f1f1f1; */
+  box-shadow: 0 0 10px steelblue inset;
 }
 
 .button:focus {

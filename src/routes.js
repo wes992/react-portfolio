@@ -1,7 +1,7 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
 
-import Body from './components/body';
+import Body from './pages/body';
 import About from './pages/about';
 import Contact from './pages/contact';
 import Projects from './pages/projects';
