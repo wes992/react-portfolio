@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const Character = styled.span`
   @keyframes rotate-in {
     0% {
-      transform: rotateZ(-45deg);
+      transform: rotateZ(-60deg);
       opacity: 0;
     }
     100% {
@@ -21,7 +21,7 @@ const Character = styled.span`
     switch (props.state) {
       case 'exiting':
       case 'entered':
-        return 'animation: rotate-in 0.25s cubic-bezier(0.250, 0.460, 0.450, 0.940) forwards;';
+        return 'animation: rotate-in 0.25s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1 forwards;';
       case 'entering':
       case 'exited':
         return 'opacity: 0;';

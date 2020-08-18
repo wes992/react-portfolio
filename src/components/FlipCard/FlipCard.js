@@ -1,5 +1,5 @@
 import React from 'react';
-import './FlipCard.css';
+import './FlipCard.scss';
 
 
 const FlipCard = ({project}) => {
@@ -9,6 +9,8 @@ const FlipCard = ({project}) => {
         const popup = document.querySelector(".pop-up");
         const sourceCode = document.querySelector(".SourceCode");
         const tryItOut = document.querySelector(".tryItOut");
+        let demoUser = document.querySelector(".demoUser");
+        let demoPw = document.querySelector(".demoPw");
     
         buttons.forEach((button) => {
             button.addEventListener('click', () => {
@@ -18,7 +20,13 @@ const FlipCard = ({project}) => {
                 const gif = button.getAttribute('data-original');
                 popup.src=gif;
                 sourceCode.href = project.repo;
-                tryItOut.href = project.link
+                tryItOut.href = project.link;
+                // demoUser = project.demoUser ? project.demoUser : '';
+                // demoPw = project.demoPw ? project.demoPw : '';
+                demoUser.textContent = project.demoUser ? ('Username: ' + project.demoUser) : '';
+                demoPw.textContent = project.demoPw ? ('Password: ' + project.demoPw) : '';
+                console.log(demoUser,',',demoPw)
+
             });
         });
     

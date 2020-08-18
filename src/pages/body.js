@@ -1,14 +1,14 @@
 import React from 'react';
 import Text from '../components/Text';
-// import Social from '../components/Social/Social';
+import Social from '../components/Social/Social';
+import AnimatedLogo from '../components/AnimatedLogo/AnimatedLogo';
 
 function Body() {
     return (
-        <div className='body'>
-            <Text>Hello, 
-                I'm Wes, 
-                a Web Developer.</Text>
-            {/* <Social/> */}
+        <div>
+            <Text>Hello, I'm Wes, A Web Developer.</Text>
+            <Social/>
+            <AnimatedLogo/>
         </div>
     );
 }

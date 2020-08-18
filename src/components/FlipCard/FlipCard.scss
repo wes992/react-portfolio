@@ -1,0 +1,84 @@
+@import '../../variables';
+
+.flip-card {
+    background-color: transparent;
+    width: 175px;
+    height: 210px;
+    perspective: 1000px; 
+    margin-top: 10px;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+    cursor: pointer;
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    border-radius: 10px;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color:$secondary-gray;
+    color: $main-blue;
+    height: 100%;
+
+    img {
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      background-size: cover;
+      max-width: 175px;
+      max-height: 125px;
+    }
+  }
+
+/* Style the back side */
+.flip-card-back {
+  background-color:$secondary-gray;
+  color: $main-blue;
+  font-size: .9rem;
+  transform: rotateY(180deg);
+
+  p {
+    margin-bottom: 0!important;
+  }
+}
+
+.button {
+  font-size: 1.5rem;
+  padding: 5px;
+  border: none;
+  border-radius: 50%;
+  color: $main-blue;
+  background-color: transparent;
+  /* box-shadow: 0 0 15px steelblue inset; */
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%, -5%) scale(1);
+
+  &:hover {
+    box-shadow: 0 0 10px steelblue inset;
+  }
+
+  &:focus {
+    outline: 0;
+  }
+}

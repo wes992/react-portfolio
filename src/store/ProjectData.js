@@ -6,31 +6,37 @@ const images = require.context('../assets/Images', true);
         _id: '1',
         title: 'Yelp Camp',
         image: images('./YelpCamp.png'),
-        description: 'Campsite Rental App to search for and book local campgrounds',
+        description: 'Campsite Rental App to book local campgrounds, complete with CRUD functions and Auth',
         techStack: 'Mongo, Express, Node',
-        demo: images('./YelpCamp.png'),
+        demo: images('./YelpCampVid.mp4'),
         repo: 'https://github.com/wes992/YelpCamp',
-        link: 'https://campsiterentals.herokuapp.com'
+        link: 'https://campsiterentals.herokuapp.com',
+        demoUser: 'Guest',
+        demoPw: 'password'
     },
     {
         _id: '2',
         title: 'Rent With Me',
         image: images('./RWM_Snip.png'),
-        description: 'Air-BNB clone application to search for and book housing on trips',
+        description: 'Air-BNB clone application to book housing on trips complete with CRUD funtions and Auth',
         techStack: 'Mongo, Express, Angular, Node (MEAN)',
-        demo: images('./RWM_Snip.png'),
+        demo: images('./rwmVid.mp4'),
         repo: 'https://github.com/wes992/Bookwithme',
-        link: 'https://rentwithme.herokuapp.com'
+        link: 'https://rentwithme.herokuapp.com',
+        demoUser: 'test@gmail.com',
+        demoPw: 'testtest'
     },
     {
         _id: '3',
         title: 'Rent With Me',
         image: images('./RWM_Snip.png'),
-        description: 'Air-BNB clone application to search for and book housing on trips',
+        description: 'Air-BNB clone application to book housing on trips complete with CRUD funtions and Auth',
         techStack: 'Mongo, Express, React, Node (MERN)',
-        demo: images('./RWM_Snip.png'),
+        demo: images('./rwmVid.mp4'),
         repo: 'https://github.com/wes992/React-RWM',
-        link: 'https://rentwithme.herokuapp.com'
+        link: 'https://rentwithme.herokuapp.com',
+        demoUser: 'test@gmail.com',
+        demoPw: 'testtest'
     },
     {
         _id: '4',
@@ -38,7 +44,7 @@ const images = require.context('../assets/Images', true);
         image: images('./patatap.png'),
         description: 'Interactive site that has randomly generated circles & tones played on keypress',
         techStack: 'Jquery, paperJS, Canvas, JS Scripts',
-        demo: images('./patatap.png'),
+        demo: images('./patatapVid.mp4'),
         repo: 'https://github.com/wes992/patatapClone',
         link: 'https://wes992.github.io/patatapClone/'
     },
@@ -48,9 +54,9 @@ const images = require.context('../assets/Images', true);
         image: images('./ColorGame.png'),
         description: 'Interactive game that aids in guessing RGB color codes',
         techStack: 'Jquery, JS Scripts, Event Listeners',
-        demo: images('./ColorGame.png'),
+        demo: images('./colorGameVid.mp4'),
         repo: 'https://github.com/wes992/RGB-Game',
-        link: 'https://wes992.github.io/RGB-Game/'
+        link: 'https://wes992.github.io/RGB-Game/',
     },
     {
         _id: '6',

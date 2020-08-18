@@ -28,9 +28,15 @@ class Projects extends Component {
                     {this.renderProjects(projects)}
                 </div>
                 <div id="modal" className='modalWindow'>
+                {/* eslint-disable-next-line */}
                     <a href="#" target='_blank' className='SourceCode'>Source Code</a>
+                {/* eslint-disable-next-line */}
                     <a href="#" target='_blank' className='tryItOut'>Try it out!</a>
-                    <img src='' alt="Gif of a website being navigated" className="pop-up"/>
+                    <div className="demoProject">
+                        <div className='demoUser'></div>
+                        <div className="demoPw"></div>
+                    </div>
+                    <video src='' height='720' width='840' autoPlay loop alt="video of a website being navigated" className="pop-up"/>
                 </div>
             </div>
         )

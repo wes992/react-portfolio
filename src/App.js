@@ -5,7 +5,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 import Routes from './routes';
 
 import Nav from "./components/nav";
-import "./App.css";
+import "./App.scss";
 
 const store = initStore();
 const App = () => {
