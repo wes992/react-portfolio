@@ -10,25 +10,25 @@ class Social extends Component {
             <span className="social">Social Links:
                 <span><a href="https://linkedin.com">
                 <FontAwesomeIcon
-                    icon='home' 
+                    icon={["fab", "linkedin"]} 
                     size="lg"/>
                     <b>Home</b></a>
                 </span> 
                 <span><a href="https://github.com">
                 <FontAwesomeIcon
-                    icon='home' 
+                    icon={["fab", "github"]}  
                     size="lg"/>
                     <b>Home</b></a>
                 </span> 
                 <span><a href="https://stackoverflow.com">
                 <FontAwesomeIcon
-                    icon='home' 
+                    icon={["fab", "stack-overflow"]}
                     size="lg"/>
                     <b>Home</b></a>
                 </span> 
                 <span><a href="https://facebook.com">
                 <FontAwesomeIcon
-                    icon='home' 
+                    icon={["fab", "facebook"]} 
                     size="lg"/>
                     <b>Home</b></a>
                 </span> 

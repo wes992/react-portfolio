@@ -26,26 +26,26 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 									size="lg"/>
 									<b>Home</b>
 					</Link>
-					<Link to='/about' className='iconSwitch'>
-								<FontAwesomeIcon
-									className='nav-item'
-									icon='user' 
-									size="lg"/> 
-									<b>About</b>
-					</Link>  
-					<Link to='/skills' className='iconSwitch'>
-								<FontAwesomeIcon 
-									className='nav-item'
-									icon='toolbox' 
-									size="lg"/> 
-									<b>Skills</b>
-					</Link>
 					<Link to='/projects' className='iconSwitch'>
 								<FontAwesomeIcon 
 									className='nav-item'
 									icon='tasks' 
 									size="lg"/> 
 									<b>Projects</b>
+					</Link>
+					<Link to='/skills' className='iconSwitch'>
+								<FontAwesomeIcon 
+									className='nav-item'
+									icon='toolbox' 
+									size="lg"/> 
+									<b>Skills</b>
+					</Link>					
+					<Link to='/about' className='iconSwitch'>
+								<FontAwesomeIcon
+									className='nav-item'
+									icon='user' 
+									size="lg"/> 
+									<b>About</b>
 					</Link>
 					<Link to='/contact' className='iconSwitch'>
 								<FontAwesomeIcon 
@@ -72,26 +72,26 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 									size="lg"/>
 									<b>Home</b>
 					</Link>
-					<Link to='/about' className='iconSwitch'>
-								<FontAwesomeIcon 
-									className='nav-item'
-									icon='user' 
-									size="lg"/> 
-									<b>About</b>
-					</Link>  
-					<Link to='/skills' className='iconSwitch'>
-								<FontAwesomeIcon 
-									className='nav-item'
-									icon='toolbox' 
-									size="lg"/> 
-									<b>Skills</b>
-					</Link>
 					<Link to='/projects' className='iconSwitch'>
 								<FontAwesomeIcon 
 									className='nav-item'
 									icon='tasks' 
 									size="lg"/> 
 									<b>Projects</b>
+					</Link>
+					<Link to='/skills' className='iconSwitch'>
+								<FontAwesomeIcon 
+									className='nav-item'
+									icon='toolbox' 
+									size="lg"/> 
+									<b>Skills</b>
+					</Link>					
+					<Link to='/about' className='iconSwitch'>
+								<FontAwesomeIcon
+									className='nav-item'
+									icon='user' 
+									size="lg"/> 
+									<b>About</b>
 					</Link>
 					<Link to='/contact' className='iconSwitch'>
 								<FontAwesomeIcon 

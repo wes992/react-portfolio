@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import SkillData from '../../store/skillData';
-import './SkillsCard.css';
+import './SkillsCard.scss';
 
 class SkillsCard extends Component {
     state = { }

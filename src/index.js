@@ -9,7 +9,8 @@ import "./index.css";
 
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faHome, faUser, faTasks, faToolbox, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
+import { fab } from '@fortawesome/free-brands-svg-icons';
 
-library.add(faHome, faUser, faTasks, faToolbox, faPaperPlane);
+library.add(fab, faHome, faUser, faTasks, faToolbox, faPaperPlane);
 
 ReactDOM.render(<App />, document.getElementById("root"));

@@ -7,6 +7,7 @@ const Body = styled.div`
   left: 10%;
   margin: auto;
   padding: 0;
+  min-width: 311px;
   max-width: 311px;
   color: #c5c5c5;
   text-align: left;

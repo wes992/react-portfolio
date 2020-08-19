@@ -7,12 +7,16 @@
     left: 65%;
     top: 40%;
     transform: translate(-50%, -50%) rotateZ(-30deg);
-    animation: fill 1s ease forwards 2s 1;
+    animation: fill 1s ease both 2s 1;
 
     path{
         stroke-dasharray: 419px;
         stroke-dashoffset: 419px;
         animation: stroke 7s ease forwards .5s;
+    }
+
+    &:hover {
+        animation: fill paused, zoomSpin 1.5s ease both;
     }
 }
 
@@ -27,4 +31,15 @@
     } to {
         fill: $main-blue;
     }
+}
+
+@keyframes zoomSpin {
+    from{
+        transform: scale(1) translate(-50%, -50%) rotateZ(-30deg);
+        fill: $main-blue;
+      }
+      to{
+        transform: scale(1) translate(-50%, -50%) rotateZ(-750deg);
+        fill: $main-blue;
+      }
 }

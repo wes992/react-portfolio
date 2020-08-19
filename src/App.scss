@@ -289,7 +289,7 @@ nav a {
   .social {
     position: absolute;
     top: 90%!important;
-    left: 50%;
+    left: 50%!important;
     transform: translate(-50%, -50%);
   }
 }
@@ -326,7 +326,7 @@ nav a {
 
 @keyframes zoom {
   from{
-    tranform: scale(1);
+    transform: scale(1);
   }
   to{
     transform: scale(1.1) translate(-50%, -50%);
