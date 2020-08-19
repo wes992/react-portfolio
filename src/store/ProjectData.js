@@ -26,18 +26,18 @@ const images = require.context('../assets/Images', true);
         demoUser: 'test@gmail.com',
         demoPw: 'testtest'
     },
-    {
-        _id: '3',
-        title: 'Rent With Me',
-        image: images('./RWM_Snip.png'),
-        description: 'Air-BNB clone application to book housing on trips complete with CRUD funtions and Auth',
-        techStack: 'Mongo, Express, React, Node (MERN)',
-        demo: images('./rwmVid.mp4'),
-        repo: 'https://github.com/wes992/React-RWM',
-        link: 'https://rentwithme.herokuapp.com',
-        demoUser: 'test@gmail.com',
-        demoPw: 'testtest'
-    },
+    // {
+    //     _id: '3',
+    //     title: 'Rent With Me',
+    //     image: images('./RWM_Snip.png'),
+    //     description: 'Air-BNB clone application to book housing on trips complete with CRUD funtions and Auth',
+    //     techStack: 'Mongo, Express, React, Node (MERN)',
+    //     demo: images('./rwmVid.mp4'),
+    //     repo: 'https://github.com/wes992/React-RWM',
+    //     link: 'https://rentwithme.herokuapp.com',
+    //     demoUser: 'test@gmail.com',
+    //     demoPw: 'testtest'
+    // },
     {
         _id: '4',
         title: 'Patatap Clone',

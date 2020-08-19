@@ -131,6 +131,7 @@ body {
 
 
 a {
+
   &.SourceCode:hover {
   text-decoration: none;
   animation: zoom 0.5s forwards;
@@ -182,7 +183,7 @@ b {
   left: -500px;
   -webkit-animation: slide 0.5s forwards;
   -webkit-animation-delay: 2s;
-  animation: slide 1s forwards;
+  animation: slide .5s forwards;
   animation-delay: 0.5s;
 }
 
@@ -326,7 +327,7 @@ nav a {
 
 @keyframes zoom {
   from{
-    transform: scale(1);
+    transform: scale(1) translate(-50%, -50%);
   }
   to{
     transform: scale(1.1) translate(-50%, -50%);

@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import AnimatedLogo from '../components/AnimatedLogo/AnimatedLogo';
+
+import '../components/AnimatedLogo/animatedLogo.scss';
 
 class Contact extends Component {
     constructor(props) {
@@ -34,6 +37,7 @@ class Contact extends Component {
       
       render() {
         return(
+          <div>
           <div className='body-container'>
               <h1 className="slide">
                   Send me a Message
@@ -53,6 +57,8 @@ class Contact extends Component {
           </div>
           <button type="submit" className="btn btn-primary">Email Me</button>
           </form>
+          </div>
+          <AnimatedLogo/>
           </div>
         );
       }

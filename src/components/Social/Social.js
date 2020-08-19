@@ -4,37 +4,62 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './Social.scss';
 
 class Social extends Component {
-    state = {  }
-    render() { 
-        return ( 
-            <span className="social">Social Links:
-                <span><a href="https://linkedin.com">
-                <FontAwesomeIcon
-                    icon={["fab", "linkedin"]} 
-                    size="lg"/>
-                    <b>Home</b></a>
-                </span> 
-                <span><a href="https://github.com">
-                <FontAwesomeIcon
-                    icon={["fab", "github"]}  
-                    size="lg"/>
-                    <b>Home</b></a>
-                </span> 
-                <span><a href="https://stackoverflow.com">
-                <FontAwesomeIcon
-                    icon={["fab", "stack-overflow"]}
-                    size="lg"/>
-                    <b>Home</b></a>
-                </span> 
-                <span><a href="https://facebook.com">
-                <FontAwesomeIcon
-                    icon={["fab", "facebook"]} 
-                    size="lg"/>
-                    <b>Home</b></a>
-                </span> 
-            </span>
-         );
-    }
+  state = {};
+  render() {
+    return (
+      <span className="social">
+        Social Links:
+        <span>
+          <a
+            href="https://www.linkedin.com/in/wes992/"
+            target="_blank"
+          >
+            <FontAwesomeIcon
+              icon={['fab', 'linkedin']}
+              size="lg"
+            />
+            <b>Home</b>
+          </a>
+        </span>
+        <span>
+          <a
+            href="https://github.com/wes992"
+            target="_blank"
+          >
+            <FontAwesomeIcon
+              icon={['fab', 'github']}
+              size="lg"
+            />
+            <b>Home</b>
+          </a>
+        </span>
+        <span>
+          <a
+            href="https://stackoverflow.com/users/13972274/wes-hampton"
+            target="_blank"
+          >
+            <FontAwesomeIcon
+              icon={['fab', 'stack-overflow']}
+              size="lg"
+            />
+            <b>Home</b>
+          </a>
+        </span>
+        <span>
+          <a
+            href="https://www.facebook.com/wes.hampton.9"
+            target="_blank"
+          >
+            <FontAwesomeIcon
+              icon={['fab', 'facebook']}
+              size="lg"
+            />
+            <b>Home</b>
+          </a>
+        </span>
+      </span>
+    );
+  }
 }
- 
+
 export default Social;
