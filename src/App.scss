@@ -10,7 +10,7 @@ html {
 body {
   padding: 0;
   min-height: 100vh;
-  background-color: $main-background!important;
+  background-color: $main-background !important;
   color: $main-text;
   overflow: none;
 }
@@ -34,7 +34,6 @@ body {
   display: none;
 }
 
-
 #logo {
   color: $main-text;
   fill: $main-blue;
@@ -56,30 +55,32 @@ body {
   text-align: left;
 }
 
-
 .project-container {
   color: $main-text;
   font-family: cursive;
   position: absolute;
   top: 13%;
   left: 10%;
-  max-width: 95%;
+  width: 90%!important;
   /* overflow-y: hidden; */
 }
 
 .project-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(200px, 1fr)
+  );
   min-height: 60vh;
   grid-gap: 1.5rem;
   position: relative;
   right: 2%;
+  // justify-content: center;
 }
 
 #modal {
-
   background: rgba(0, 0, 0, 0.7);
-  opacity: 0;  
+  opacity: 0;
   position: fixed;
   top: 0;
   left: 0;
@@ -93,7 +94,7 @@ body {
     pointer-events: all;
   }
 
-  a.SourceCode{
+  a.SourceCode {
     color: $main-blue;
     font-size: 1.5rem;
     position: absolute;
@@ -103,7 +104,7 @@ body {
     transition: all 0.5s ease-out;
   }
 
-  a.tryItOut{
+  a.tryItOut {
     color: $main-blue;
     font-size: 1.5rem;
     position: absolute;
@@ -113,7 +114,6 @@ body {
     transition: all 0.5s ease-out;
   }
 }
-
 
 .pop-up {
   position: absolute;
@@ -126,15 +126,12 @@ body {
   &.open {
     transform: scale(1);
   }
-  
 }
 
-
 a {
-
   &.SourceCode:hover {
-  text-decoration: none;
-  animation: zoom 0.5s forwards;
+    text-decoration: none;
+    animation: zoom 0.5s forwards;
   }
 
   &.tryItOut:hover {
@@ -142,7 +139,6 @@ a {
     animation: zoom 0.5s forwards;
   }
 }
-
 
 .demoProject {
   width: 210px;
@@ -155,7 +151,6 @@ a {
   transform: translate(-50%, -50%);
 }
 
-
 .portrait {
   border-radius: 50%;
   height: 200px;
@@ -166,11 +161,9 @@ a {
   }
 }
 
-
 .wordSpace {
   margin-right: 2%;
 }
-
 
 b {
   font-family: cursive;
@@ -181,10 +174,10 @@ b {
 .slide {
   position: relative;
   left: -500px;
-  -webkit-animation: slide 0.5s forwards;
-  -webkit-animation-delay: 2s;
-  animation: slide .5s forwards;
-  animation-delay: 0.5s;
+  -webkit-animation: slide 1s forwards;
+  // -webkit-animation-delay: 2s;
+  animation: slide 1s forwards;
+  // animation-delay: 0.5s;
 }
 
 .fade-in {
@@ -196,7 +189,7 @@ b {
 }
 
 h5.fade-in {
-  font-size: 1.2rem!important;
+  font-size: 1.2rem !important;
 }
 
 span.sc-AxjAm {
@@ -214,11 +207,11 @@ nav a {
 
   &:hover {
     color: $main-background;
-  
+
     svg.nav-item {
       display: none;
     }
-  
+
     b {
       color: $main-blue;
       display: block;
@@ -230,8 +223,8 @@ nav a {
   height: 60px;
 
   &:hover {
-  text-decoration: none;
-  color: $main-blue;
+    text-decoration: none;
+    color: $main-blue;
   }
 
   &:visited {
@@ -241,23 +234,22 @@ nav a {
 
 @media (max-width: 768px) {
   #secondary-nav {
-      display: block;
-      background-color: $main-background;
-      z-index: 1;
-      position: fixed;
-      top: 0;
-      height: 9%;
-      width: 100%;
+    display: block;
+    background-color: $main-background;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    height: 9%;
+    width: 100%;
 
-      ul {
-        display: flex;
-        justify-content: space-around;
-      }
-      
+    ul {
+      display: flex;
+      justify-content: space-around;
+    }
   }
 
   #primary-nav {
-      display: none;
+    display: none;
   }
   body {
     overflow-x: hidden;
@@ -273,24 +265,24 @@ nav a {
     transform: translate(-50%, -50%) rotateZ(-30deg);
     animation: fill 1s ease forwards 2s 1;
 
-    path{
-        stroke-dasharray: 419px;
-        stroke-dashoffset: 419px;
-        animation: stroke 7s ease forwards .5s;
+    path {
+      stroke-dasharray: 419px;
+      stroke-dashoffset: 419px;
+      animation: stroke 7s ease forwards 0.5s;
     }
   }
 
   .sc-AxirZ {
     position: absolute;
-    top: 65%!important;
-    left: 50%!important;
+    top: 65% !important;
+    left: 50% !important;
     transform: translate(-50%, -50%);
   }
 
   .social {
     position: absolute;
-    top: 90%!important;
-    left: 50%!important;
+    top: 90% !important;
+    left: 50% !important;
     transform: translate(-50%, -50%);
   }
 }
@@ -326,22 +318,21 @@ nav a {
 }
 
 @keyframes zoom {
-  from{
+  from {
     transform: scale(1) translate(-50%, -50%);
   }
-  to{
+  to {
     transform: scale(1.1) translate(-50%, -50%);
   }
 }
 
-
 @-webkit-keyframes slide {
   0% {
-    opacity: 0%;
+    opacity: 0;
     transform: rotateZ(-90deg);
   }
   100% {
-    opacity: 100%;
+    opacity: 1;
     transform: rotateZ(0);
     left: 0;
   }
@@ -349,11 +340,11 @@ nav a {
 
 @keyframes slide {
   0% {
-    opacity: 0%;
+    opacity: 0;
     transform: rotateZ(-90deg);
   }
   100% {
-    opacity: 100%;
+    opacity: 1;
     transform: rotateZ(0);
     left: 0;
   }
@@ -361,10 +352,9 @@ nav a {
 
 @keyframes fade-in {
   0% {
-    opacity: 0%
+    opacity: 0;
   }
   100% {
-    opacity: 80%
+    opacity: 0.8;
   }
 }
-

@@ -18,7 +18,7 @@ class Contact extends Component {
         e.preventDefault();
         axios({
           method: "POST", 
-          url:"http://localhost:3002/send", 
+          url:"/contact/send", 
           data:  this.state
         }).then((response)=>{
           if (response.data.status === 'success'){

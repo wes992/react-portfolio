@@ -13,6 +13,7 @@ class Social extends Component {
           <a
             href="https://www.linkedin.com/in/wes992/"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <FontAwesomeIcon
               icon={['fab', 'linkedin']}
@@ -25,6 +26,7 @@ class Social extends Component {
           <a
             href="https://github.com/wes992"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <FontAwesomeIcon
               icon={['fab', 'github']}
@@ -37,6 +39,7 @@ class Social extends Component {
           <a
             href="https://stackoverflow.com/users/13972274/wes-hampton"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <FontAwesomeIcon
               icon={['fab', 'stack-overflow']}
@@ -49,6 +52,7 @@ class Social extends Component {
           <a
             href="https://www.facebook.com/wes.hampton.9"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <FontAwesomeIcon
               icon={['fab', 'facebook']}
