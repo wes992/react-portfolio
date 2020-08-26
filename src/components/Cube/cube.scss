@@ -1,7 +1,7 @@
 .wrapper {
     height: 150px;
     height: 150px;
-    margin: auto;
+    margin: 50px auto;
   }
   
   .box-area {
@@ -31,7 +31,7 @@
   }
   .box-area .back {
     background: url('../../assets/icons/node.png') center no-repeat;
-    /* background-color: rgba(51, 51, 51, 0.2); */
+    background-color: rgba(51, 51, 51, 0.2);
     transform: rotateY(90deg) translateZ(75px);
   }
   

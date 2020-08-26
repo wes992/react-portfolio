@@ -8,7 +8,7 @@ import Nav from "./components/nav";
 import "./App.scss";
 
 const store = initStore();
-const App = () => {
+const App = () => { 
 
   return (
       <Provider store = {store}>

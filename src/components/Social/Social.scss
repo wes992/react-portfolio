@@ -1,24 +1,26 @@
 @import '../../variables';
 
 .social {
-    color: $main-text;
-    font-family: cursive;
-    /* font-style: bold; */
-    position: absolute;
-    top: 60%;
-    left: 10%;
-    overflow: hidden;
+  color: $main-text;
+  font-family: $main-font;
+  /* font-style: bold; */
+  position: absolute;
+  top: 60%;
+  left: 10%;
+  overflow: hidden;
 
-    a {
-        color: $main-text;
-        padding: 0 10px;
-        
-        &:hover {
-            color: $main-blue;
-        }
-        &:visited {
-            color: $main-text;
-            text-decoration: none;
-        }
-    } 
+  a {
+    color: $main-text;
+    padding: 0 15px;
+    text-align: center;
+
+    &:hover {
+      color: $main-blue;
+      padding: 0 5px;
+    }
+    &:visited {
+      color: $main-text;
+      text-decoration: none;
+    }
+  }
 }

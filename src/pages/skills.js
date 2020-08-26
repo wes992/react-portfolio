@@ -14,7 +14,7 @@ const Skills = () => {
 								<SkillsCard/>
 							</div>
 						</div>
-            			<div className="wrapper col-6">
+            			<div className="wrapper col-6 align-items-top">
 							<Cube/>
 						</div>
 					</div>

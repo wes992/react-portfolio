@@ -16,24 +16,41 @@ class Contact extends Component {
     
       handleSubmit(e){
         e.preventDefault();
-        axios({
-          method: "POST", 
-          url:"/contact/send", 
-          data:  this.state
-        }).then((response)=>{
+
+        const data = { name:this.state.name, email:this.state.email, message:this.state.message };
+      
+        axios.post('https://us-central1-wesportfolio.cloudfunctions.net/submit', data).then((response)=>{
           if (response.data.status === 'success'){
             alert("Message Sent."); 
             this.resetForm()
           }else if(response.data.status === 'fail'){
             alert("Message failed to send.")
           }
-        })
+        });
+        
+        
+        
+        
+        
+        // preventDefault();
+        // axios({
+        //   method: "POST", 
+        //   url:"/send", 
+        //   data:  this.state
+        // }).then((response)=>{
+        //   if (response.data.status === 'success'){
+        //     alert("Message Sent."); 
+        //     this.resetForm()
+        //   }else if(response.data.status === 'fail'){
+        //     alert("Message failed to send.")
+        //   }
+        // })
       }
     
-      resetForm(){
+      // resetForm(){
         
-         this.setState({name: '', email: '', message: ''})
-      }
+      //    this.setState({name: '', email: '', message: ''})
+      // }
       
       render() {
         return(
@@ -42,7 +59,7 @@ class Contact extends Component {
               <h1 className="slide">
                   Send me a Message
               </h1>
-          <form id="contact-form" className='fade-in' onSubmit={this.handleSubmit.bind(this)} method="POST">
+          <form id="contact-form" className='fade-in flex' onSubmit={this.handleSubmit.bind(this)} method="POST">
           <div className="form-group">
               <label htmlFor="name">Name</label>
               <input type="text" className="form-control col-6" id="name" value={this.state.name} onChange={this.onNameChange.bind(this)} />

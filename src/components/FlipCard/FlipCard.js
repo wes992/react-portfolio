@@ -21,11 +21,9 @@ const FlipCard = ({project}) => {
                 popup.src=gif;
                 sourceCode.href = project.repo;
                 tryItOut.href = project.link;
-                // demoUser = project.demoUser ? project.demoUser : '';
-                // demoPw = project.demoPw ? project.demoPw : '';
                 demoUser.textContent = project.demoUser ? ('Username: ' + project.demoUser) : '';
                 demoPw.textContent = project.demoPw ? ('Password: ' + project.demoPw) : '';
-                console.log(demoUser,',',demoPw)
+                // console.log(demoUser,',',demoPw)
 
             });
         });

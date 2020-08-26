@@ -11,8 +11,8 @@ const Body = styled.div`
   max-width: 311px;
   color: #c5c5c5;
   text-align: left;
+  font-family: 'Architects Daughter', cursive;
   font-weight: bold;
-  font-family: cursive;
 `;
 
 export default Body;

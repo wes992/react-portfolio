@@ -6,7 +6,8 @@ import AnimatedLogo from '../components/AnimatedLogo/AnimatedLogo';
 function Body() {
     return (
         <div>
-            <Text>Hello, I'm Wes,  a Web Developer.</Text>
+            <Text>Hello, I'm Wes,
+                  a Web Developer.</Text>
             <Social/>
             <AnimatedLogo/>
         </div>

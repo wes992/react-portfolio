@@ -6,15 +6,9 @@
       "**/.*",
       "**/node_modules/**"
     ],
-    "rewrites": [
-      {
-        "source": "/",
+    "rewrites": [ {
+        "source": "**",
         "destination": "/index.html"
-      },
-       {
-        "source": "/contact/send",
-        "function": "app"
-      }
-    ]
+    } ]
   }
 }

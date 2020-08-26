@@ -46,7 +46,7 @@ body {
 }
 
 .body-container {
-  font-family: cursive;
+  font-family: $main-font;;
   position: absolute;
   top: 20%;
   left: 10%;
@@ -57,7 +57,7 @@ body {
 
 .project-container {
   color: $main-text;
-  font-family: cursive;
+  font-family: $main-font;
   position: absolute;
   top: 13%;
   left: 10%;
@@ -74,8 +74,9 @@ body {
   min-height: 60vh;
   grid-gap: 1.5rem;
   position: relative;
-  right: 2%;
-  // justify-content: center;
+  left: 2%;
+  background:transparent;
+    // justify-content: center;
 }
 
 #modal {
@@ -166,7 +167,7 @@ a {
 }
 
 b {
-  font-family: cursive;
+  font-family: $main-font;;
   font-size: small;
   display: none;
 }
@@ -202,7 +203,7 @@ span.sc-AxjAm {
   }
 }
 
-nav a {
+nav a, .social a {
   color: $main-text;
 
   &:hover {
@@ -214,9 +215,11 @@ nav a {
 
     b {
       color: $main-blue;
-      display: block;
+      display: inline-block;
     }
+
   }
+
 }
 
 .iconSwitch {
@@ -229,6 +232,18 @@ nav a {
 
   &:visited {
     text-decoration: none;
+  }
+  &.active {
+
+    svg.nav-item {
+      display: none;
+    }
+
+    b {
+      display: block;
+      color: $main-blue;
+      // font-size: 1.2rem;
+    }
   }
 }
 

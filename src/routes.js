@@ -8,6 +8,7 @@ import Projects from './pages/projects';
 import Skills from './pages/skills';
 
 const Routes = () => {
+ 
   return (
     <Switch>
       <Route exact path="/">

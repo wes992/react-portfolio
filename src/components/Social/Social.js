@@ -9,7 +9,7 @@ class Social extends Component {
     return (
       <span className="social">
         Social Links:
-        <span>
+        <span className='socialSpan'>
           <a
             href="https://www.linkedin.com/in/wes992/"
             target="_blank"
@@ -19,7 +19,7 @@ class Social extends Component {
               icon={['fab', 'linkedin']}
               size="lg"
             />
-            <b>Home</b>
+            <b>Linked In</b>
           </a>
         </span>
         <span>
@@ -32,7 +32,7 @@ class Social extends Component {
               icon={['fab', 'github']}
               size="lg"
             />
-            <b>Home</b>
+            <b>GitHub</b>
           </a>
         </span>
         <span>
@@ -45,7 +45,7 @@ class Social extends Component {
               icon={['fab', 'stack-overflow']}
               size="lg"
             />
-            <b>Home</b>
+            <b>Stack</b>
           </a>
         </span>
         <span>
@@ -58,7 +58,7 @@ class Social extends Component {
               icon={['fab', 'facebook']}
               size="lg"
             />
-            <b>Home</b>
+            <b>Facebook</b>
           </a>
         </span>
       </span>

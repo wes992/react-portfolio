@@ -14,7 +14,7 @@ const Character = styled.span`
 
   color: #c5c5c5;
   display: inline-block;
-  font-family: cursive;
+  font-family: 'Architects Daughter', cursive;
   font-size: 36px;
   min-width: 10px;
   ${(props) => {
