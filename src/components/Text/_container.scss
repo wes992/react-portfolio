@@ -1,7 +1,4 @@
-import styled from 'styled-components';
-
-export const Container = styled.div`
-  // overflow: hidden;
+.animated-container {
   position: absolute;
   top: 20%;
   left: 10%;
@@ -13,4 +10,14 @@ export const Container = styled.div`
   text-align: left;
   font-family: 'Architects Daughter', cursive;
   font-weight: bold;
-`;
+
+  span {
+    display: inline-block;
+    color: $main-text;
+
+    &:hover {
+      animation: rotate-in paused, rubberBand 1s forwards;
+      color: $main-blue;
+    }
+  }
+}

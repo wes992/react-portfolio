@@ -1,0 +1,36 @@
+.social-container {
+  position: absolute;
+  top: 90% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%);
+  color: $main-text;
+  font-family: $main-font;
+  display: flex;
+
+  a {
+    color: $main-text;
+    padding: 0 15px;
+    text-align: center;
+
+    &:hover {
+      color: $main-blue;
+      padding: 0 5px;
+    }
+    &:visited {
+      color: $main-text;
+      text-decoration: none;
+    }
+  }
+
+  &__label {
+    display: flex;
+    align-items: center;
+  }
+
+  .link-container {
+    max-width: 3rem;
+    margin-left: 1rem;
+    display: flex;
+    align-items: center;
+  }
+}

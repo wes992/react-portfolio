@@ -1,13 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import AnimatedText from '../AnimatedText';
-import Container from '../Container';
+import { AnimatedText } from '../AnimatedText';
 
 const Text = ({ children }) => (
-  <Container>
+  <div className="animated-container">
     <AnimatedText>{children}</AnimatedText>
-    <h5 className= 'fade-in' style={{opacity: 0}}>Full-stack | Jr. Dev | Self-taught </h5>
-  </Container>
+    <h5 className="fade-in">
+      Full-stack | Jr. Dev | Self-taught{' '}
+    </h5>
+  </div>
 );
 
 Text.propTypes = {
