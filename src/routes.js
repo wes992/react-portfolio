@@ -1,14 +1,10 @@
-import React from "react";
-import { Switch, Route } from "react-router-dom";
+import React from 'react';
+import { Switch, Route } from 'react-router-dom';
 
-import Body from './pages/body';
-import About from './pages/about';
-import Contact from './pages/contact';
+import { Body, About, Contact, Skills } from './pages';
 import Projects from './pages/projects';
-import Skills from './pages/skills';
 
 const Routes = () => {
- 
   return (
     <Switch>
       <Route exact path="/">

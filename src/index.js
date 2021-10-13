@@ -1,16 +1,11 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import App from "./App";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App';
 
-import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.min.js";
+import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/js/bootstrap.min.js';
 
-import "./index.css";
+import './index.css';
+import './FontAwesome';
 
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { faHome, faUser, faTasks, faToolbox, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
-import { fab } from '@fortawesome/free-brands-svg-icons';
-
-library.add(fab, faHome, faUser, faTasks, faToolbox, faPaperPlane);
-
-ReactDOM.render(<App />, document.getElementById("root"));
+ReactDOM.render(<App />, document.getElementById('root'));

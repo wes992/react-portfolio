@@ -1,4 +1,8 @@
 @import 'variables';
+@import './components/Text/container';
+@import './components/AnimatedLogo/animatedLogo';
+@import './components/NavBar/navbar';
+@import './components/Social/social';
 
 html {
   margin: none;
@@ -15,38 +19,8 @@ body {
   overflow: none;
 }
 
-#primary-nav {
-  text-align: center;
-  min-height: 100vh;
-  max-width: 8%;
-  overflow: hidden;
-
-  ul {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: space-around;
-  }
-}
-
-#secondary-nav {
-  display: none;
-}
-
-#logo {
-  color: $main-text;
-  fill: $main-blue;
-
-  &:hover {
-    text-decoration: none;
-    color: $main-blue;
-    animation: rubberBand 1s forwards;
-  }
-}
-
 .body-container {
-  font-family: $main-font;;
+  font-family: $main-font;
   position: absolute;
   top: 20%;
   left: 10%;
@@ -61,7 +35,7 @@ body {
   position: absolute;
   top: 13%;
   left: 10%;
-  width: 90%!important;
+  width: 90% !important;
   /* overflow-y: hidden; */
 }
 
@@ -75,8 +49,8 @@ body {
   grid-gap: 1.5rem;
   position: relative;
   left: 2%;
-  background:transparent;
-    // justify-content: center;
+  background: transparent;
+  // justify-content: center;
 }
 
 #modal {
@@ -167,7 +141,7 @@ a {
 }
 
 b {
-  font-family: $main-font;;
+  font-family: $main-font;
   font-size: small;
   display: none;
 }
@@ -193,113 +167,9 @@ h5.fade-in {
   font-size: 1.2rem !important;
 }
 
-span.sc-AxjAm {
-  display: inline-block;
-  color: $main-text;
-
-  &:hover {
-    animation: rotate-in paused, rubberBand 1s forwards;
-    color: $main-blue;
-  }
-}
-
-nav a, .social a {
-  color: $main-text;
-
-  &:hover {
-    color: $main-background;
-
-    svg.nav-item {
-      display: none;
-    }
-
-    b {
-      color: $main-blue;
-      display: inline-block;
-    }
-
-  }
-
-}
-
-.iconSwitch {
-  height: 60px;
-
-  &:hover {
-    text-decoration: none;
-    color: $main-blue;
-  }
-
-  &:visited {
-    text-decoration: none;
-  }
-  &.active {
-
-    svg.nav-item {
-      display: none;
-    }
-
-    b {
-      display: block;
-      color: $main-blue;
-      // font-size: 1.2rem;
-    }
-  }
-}
-
-@media (max-width: 768px) {
-  #secondary-nav {
-    display: block;
-    background-color: $main-background;
-    z-index: 1;
-    position: fixed;
-    top: 0;
-    height: 9%;
-    width: 100%;
-
-    ul {
-      display: flex;
-      justify-content: space-around;
-    }
-  }
-
-  #primary-nav {
-    display: none;
-  }
-  body {
-    overflow-x: hidden;
-    overflow-y: auto;
-  }
-
-  #animatedLogo {
-    height: 125px;
-    width: 143.75px;
-    position: absolute;
-    left: 50%;
-    top: 30%;
-    transform: translate(-50%, -50%) rotateZ(-30deg);
-    animation: fill 1s ease forwards 2s 1;
-
-    path {
-      stroke-dasharray: 419px;
-      stroke-dashoffset: 419px;
-      animation: stroke 7s ease forwards 0.5s;
-    }
-  }
-
-  .sc-AxirZ {
-    position: absolute;
-    top: 65% !important;
-    left: 50% !important;
-    transform: translate(-50%, -50%);
-  }
-
-  .social {
-    position: absolute;
-    top: 90% !important;
-    left: 50% !important;
-    transform: translate(-50%, -50%);
-  }
+body {
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 @keyframes rubberBand {
