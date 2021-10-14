@@ -1,8 +1,13 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 
-import { Body, About, Contact, Skills } from './pages';
-import Projects from './pages/projects';
+import {
+  Body,
+  About,
+  Contact,
+  Skills,
+  Projects,
+} from './pages';
 
 const Routes = () => {
   return (
