@@ -1,6 +1,6 @@
 const images = require.context('../assets/Images', true);
 
-export const ProjectData = [
+export const projectData = [
   {
     _id: '1',
     title: 'Yelp Camp',
@@ -72,5 +72,3 @@ export const ProjectData = [
     link: 'https://wes992.github.io/To-Do-List/',
   },
 ];
-
-export default ProjectData;

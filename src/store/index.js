@@ -1,11 +1,4 @@
-import { createStore, combineReducers } from 'redux';
-import projects from './reducers/projectReducers';
+import { projectData } from './projectData';
+import { skillData } from './skillData';
 
-export function initStore() {
-  const reducers = combineReducers({
-    projects,
-  });
-
-  const store = createStore(reducers);
-  return store;
-}
+export { projectData, skillData };
