@@ -7,7 +7,7 @@ const About = () => {
       <div className="container-fluid">
         <div className="row">
           <div className="col-8">
-            <h1 className="slide">About:</h1>
+            <h1>About:</h1>
             <p className="fade-in">
               I am a self taught Developer, with a primary
               skillset in Full Stack Web Development and a
