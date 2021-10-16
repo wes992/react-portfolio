@@ -3,11 +3,11 @@
 #animatedLogo {
   height: 125px;
   width: 143.75px;
-  position: absolute;
-  transform: translate(-50%, -50%) rotateZ(-30deg);
+  // position: absolute;
+  // left: 50%;
+  // bottom: 20%;
+  // transform: translate(-50%, -50%) rotateZ(-30deg);
   animation: fill 1s ease both 2s 1;
-  left: 50%;
-  bottom: 20%;
 
   @include media-breakpoint-up(md) {
     left: 65%;
