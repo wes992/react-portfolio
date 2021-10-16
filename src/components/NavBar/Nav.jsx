@@ -79,34 +79,24 @@ const Nav = () => {
 
   const getLinks = () => {
     return links.map((link, index) => (
-      <li className="nav-item">
+      <li>
         <Link
           key={link.path + index}
           to={link.path}
-          className={`nav-link ${
+          className={`link ${
             link.path === pathname ? 'active' : ''
           }`}
+          onClick={() => setNavOpen(false)}
         >
           {link.icon}
+          {link.children}
         </Link>
       </li>
     ));
   };
 
   return (
-    // <nav id="primary-nav">
     <nav>
-      {/* <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button> */}
       <div
         className="hamburger"
         onClick={() => setNavOpen(!navOpen)}
@@ -115,16 +105,12 @@ const Nav = () => {
         <div className="line"></div>
         <div className="line"></div>
       </div>
-      {/* <div
-        className="collapse navbar-collapse"
-        id="navbarNav"
-      > */}
+
       <ul
         className={`navbar-links ${navOpen ? 'open' : ''}`}
       >
         {getLinks()}
       </ul>
-      {/* </div> */}
     </nav>
   );
 };

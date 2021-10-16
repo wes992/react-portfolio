@@ -128,7 +128,7 @@ body {
 b {
   font-family: $main-font;
   font-size: small;
-  display: none;
+  // display: none;
 }
 
 .fade-in {
@@ -139,6 +139,28 @@ b {
 
 h5.fade-in {
   font-size: 1.2rem !important;
+}
+
+.landing-page {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  .row {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 5rem 1rem;
+
+    .animated-logo {
+      padding: 3rem 0;
+
+      @include media-breakpoint-up(sm) {
+        padding: 0;
+      }
+    }
+  }
 }
 
 @keyframes rubberBand {

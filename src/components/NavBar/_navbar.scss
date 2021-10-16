@@ -46,12 +46,12 @@ nav {
   align-items: center;
   list-style: none;
   position: fixed;
-  background: steelblue;
+  background: rgba(0, 0, 0, 0.9);
   height: 100vh;
   width: 100%;
   clip-path: circle(100px at 90% -20%);
   -webkit-clip-path: circle(100px at 90% -20%);
-  transition: all 0.5s ease-out;
+  transition: all 0.8s ease-out;
 
   @include media-breakpoint-up(sm) {
     flex-direction: row;
@@ -59,18 +59,16 @@ nav {
     height: 100%;
     margin-left: auto;
     position: relative;
-    clip-path: circle(1000px at 90% -10%);
-    -webkit-clip-path: circle(1000px at 90% -10%);
-  }
-
-  a {
-    color: white;
-    text-decoration: none;
+    clip-path: none;
+    -webkit-clip-path: none;
+    transition: none;
+    background: transparent;
   }
 
   &.open {
     clip-path: circle(1000px at 90% -10%);
     -webkit-clip-path: circle(1000px at 90% -10%);
+    z-index: 1;
   }
 }
 
@@ -85,44 +83,17 @@ nav {
   }
 }
 
-// .nav a,
+.navbar-links li .link,
 .social-container a {
+  text-decoration: none;
+  height: 5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
   color: $main-text;
-
-  &:hover {
-    color: $main-background;
-
-    svg {
-      display: none;
-    }
-
-    b {
-      color: $main-blue;
-      display: inline-block;
-    }
+  &.active {
+    color: $main-blue;
   }
 }
-
-// .iconSwitch {
-//   height: 60px;
-
-//   &:hover {
-//     text-decoration: none;
-//     color: $main-blue;
-//   }
-
-//   &:visited {
-//     text-decoration: none;
-//   }
-
-//   &.active {
-//     svg.nav-item {
-//       display: none;
-//     }
-
-//     b {
-//       display: block;
-//       color: $main-blue;
-//     }
-//   }
-// }

@@ -35,9 +35,9 @@ const Social = () => {
 
   return (
     <div className="social-container">
-      <span className="social-container__label">
+      <div className="social-container__label">
         Social Links:
-      </span>
+      </div>
       {links.map((link, index) => (
         <div
           key={link.name + index}
