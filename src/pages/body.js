@@ -5,11 +5,13 @@ import { AnimatedLogo } from '../components/AnimatedLogo';
 
 const Body = () => {
   return (
-    <div>
-      <Text>Hello, I'm Wes, a Web Developer.</Text>
+    <>
+      <div className="landingPage">
+        <Text>Hello, I'm Wes, a Web Developer.</Text>
+        <AnimatedLogo />
+      </div>
       <Social />
-      <AnimatedLogo />
-    </div>
+    </>
   );
 };
 
