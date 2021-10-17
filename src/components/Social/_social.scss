@@ -1,36 +1,35 @@
 .social-container {
-  // position: absolute;
-  // top: 90% !important;
-  // left: 50% !important;
-  // transform: translate(-50%, -50%);
   color: $main-text;
   font-family: $main-font;
   display: flex;
+  flex-wrap: wrap;
+  // justify-content: space-evenly;
+  list-style: none;
+  min-width: 50%;
+  margin-bottom: 3rem;
 
-  a {
-    color: $main-text;
-    padding: 0 15px;
+  .link {
+    padding: 0 1rem;
+  }
+  .-left {
+    flex: 100%;
     text-align: center;
-
-    &:hover {
-      color: $main-blue;
-      padding: 0 5px;
-    }
-    &:visited {
-      color: $main-text;
-      text-decoration: none;
-    }
+    margin-bottom: map-get($spacers, 3);
   }
 
-  &__label {
+  .-right {
     display: flex;
-    align-items: center;
+    flex: 100%;
+    justify-content: space-between;
   }
 
-  .link-container {
-    max-width: 3rem;
-    margin-left: 1rem;
-    display: flex;
-    align-items: center;
+  @include media-breakpoint-up(sm) {
+    .-left {
+      flex: 30%;
+    }
+
+    .-right {
+      flex: 70%;
+    }
   }
 }

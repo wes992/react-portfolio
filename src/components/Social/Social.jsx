@@ -35,27 +35,25 @@ const Social = () => {
 
   return (
     <div className="social-container">
-      <div className="social-container__label">
-        Social Links:
+      <div className="-left">Social Links:</div>
+      <div className="-right">
+        {links.map((link, index) => (
+          <li key={link.name + index}>
+            <a
+              className="link"
+              href={link.url}
+              target={link.target}
+              rel="noopener noreferrer"
+            >
+              <FontAwesomeIcon
+                icon={link.icon}
+                size={link.iconSize}
+              />
+              <b>{link.name}</b>
+            </a>
+          </li>
+        ))}
       </div>
-      {links.map((link, index) => (
-        <div
-          key={link.name + index}
-          className="link-container"
-        >
-          <a
-            href={link.url}
-            target={link.target}
-            rel="noopener noreferrer"
-          >
-            <FontAwesomeIcon
-              icon={link.icon}
-              size={link.iconSize}
-            />
-            <b>{link.name}</b>
-          </a>
-        </div>
-      ))}
       {/* <span>
         <a
           href="https://www.facebook.com/wes.hampton.9"

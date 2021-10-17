@@ -82,18 +82,3 @@ nav {
     animation: rubberBand 1s forwards;
   }
 }
-
-.navbar-links li .link,
-.social-container a {
-  text-decoration: none;
-  height: 5vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-
-  color: $main-text;
-  &.active {
-    color: $main-blue;
-  }
-}

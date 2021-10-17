@@ -22,11 +22,9 @@ const Projects = () => {
 
   return (
     <>
-      <div className="project-container">
-        <h3>Some of my projects:</h3>
-        <div className="row project-list fade-in">
-          {renderProjects()}
-        </div>
+      <h3>Some of my projects:</h3>
+      <div className="row project-list fade-in">
+        {renderProjects()}
       </div>
       <ProjectModal
         {...selectedProject}
