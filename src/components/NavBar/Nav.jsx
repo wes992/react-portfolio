@@ -30,58 +30,41 @@ const Nav = () => {
     {
       path: '/',
       className: 'nav-item nav-link',
-      icon: (
-        <FontAwesomeIcon
-          // className="nav-item"
-          icon="home"
-          size="lg"
-        />
-      ),
+      icon: <FontAwesomeIcon icon="home" size="lg" />,
       children: <b>Home</b>,
     },
     {
       path: '/projects',
       className: 'nav-item nav-link',
-      icon: (
-        <FontAwesomeIcon
-          // className="nav-item"
-          icon="tasks"
-          size="lg"
-        />
-      ),
+      icon: <FontAwesomeIcon icon="tasks" size="lg" />,
       children: <b>Projects</b>,
     },
     {
       path: '/skills',
       className: 'nav-item nav-link',
-      icon: (
-        <FontAwesomeIcon
-          // className="nav-item"
-          icon="toolbox"
-          size="lg"
-        />
-      ),
+      icon: <FontAwesomeIcon icon="toolbox" size="lg" />,
       children: <b>Skills</b>,
     },
     {
       path: '/about',
       className: 'nav-item nav-link',
-      icon: (
-        <FontAwesomeIcon
-          // className="nav-item"
-          icon="user"
-          size="lg"
-        />
-      ),
+      icon: <FontAwesomeIcon icon="user" size="lg" />,
       children: <b>About</b>,
+    },
+    {
+      path: '/contact',
+      className: 'nav-item nav-link',
+      icon: (
+        <FontAwesomeIcon icon="paper-plane" size="lg" />
+      ),
+      children: <b>Contact</b>,
     },
   ];
 
   const getLinks = () => {
     return links.map((link, index) => (
-      <li>
+      <li key={link.path + index}>
         <Link
-          key={link.path + index}
           to={link.path}
           className={`link ${
             link.path === pathname ? 'active' : ''

@@ -20,16 +20,9 @@ body {
 }
 
 .project-list {
-  display: grid;
-  grid-template-columns: repeat(
-    auto-fit,
-    minmax(200px, 1fr)
-  );
-  min-height: 60vh;
-  grid-gap: 1.5rem;
-  position: relative;
-  left: 2%;
-  background: transparent;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 #modal {
@@ -153,9 +146,9 @@ h5.fade-in {
     color: $main-blue;
   }
 
-  // &:hover {
-  //   color: yellow;
-  // }
+  &:hover {
+    color: $main-blue;
+  }
 }
 
 @keyframes rubberBand {

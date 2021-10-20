@@ -54,19 +54,6 @@ const Social = () => {
           </li>
         ))}
       </div>
-      {/* <span>
-        <a
-          href="https://www.facebook.com/wes.hampton.9"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FontAwesomeIcon
-            icon={['fab', 'facebook']}
-            size="lg"
-          />
-          <b>Facebook</b>
-        </a>
-      </span> */}
     </div>
   );
 };
