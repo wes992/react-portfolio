@@ -24,3 +24,7 @@ yarn-error.log*
 /src/server
 .vscode/launch.json
 yarn.lock
+.firebase
+functions
+firebase.json
+.firebaserc
