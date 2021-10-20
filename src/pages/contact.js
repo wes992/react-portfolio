@@ -11,7 +11,6 @@ const Contact = () => {
   const {
     register,
     handleSubmit,
-    watch,
     formState: { errors },
     reset,
   } = useForm({ defaultValues: defaultformDetails });
@@ -30,10 +29,6 @@ const Contact = () => {
   };
 
   const onSubmit = async (formData) => {
-    console.log('formData', formData);
-
-    const { name, email, message } = formData;
-
     const response = await sendMessage(formData);
 
     console.log(response);
@@ -42,10 +37,10 @@ const Contact = () => {
   };
 
   return (
-    <div>
-      <div className="body-container">
-        <h1 className="slide">Send me a Message</h1>
-        <form id="contact-form" className="fade-in">
+    <>
+      <h1 className="slide">Send me a Message</h1>
+      <div className="contact-form">
+        <form className="fade-in">
           <div className="form-group">
             <label htmlFor="name">Name</label>
             <input
@@ -87,9 +82,9 @@ const Contact = () => {
             Email Me
           </button>
         </form>
+        <AnimatedLogo />
       </div>
-      <AnimatedLogo />
-    </div>
+    </>
   );
 };
 
