@@ -1,6 +1,7 @@
 .wrapper {
   width: 100px;
-  // margin: 50px auto;
+  margin-left: map-get($spacers, 5);
+  padding-top: map-get($spacers, 5);
 }
 
 .box-area {

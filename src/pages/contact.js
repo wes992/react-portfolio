@@ -41,7 +41,7 @@ const Contact = () => {
 
   return (
     <>
-      <h1 className="slide">Send me a Message</h1>
+      <h3 className="header slide">Send me a Message</h3>
       <div className="contact-form">
         <form className="fade-in">
           <div className="form-group">

@@ -22,8 +22,8 @@ const Projects = () => {
 
   return (
     <>
-      <h3>Some of my projects:</h3>
-      <div className="row project-list fade-in">
+      <h3 className="header">Some of my projects:</h3>
+      <div className="item-list fade-in">
         {renderProjects()}
       </div>
       <ProjectModal
