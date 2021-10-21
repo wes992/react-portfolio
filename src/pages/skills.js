@@ -4,19 +4,15 @@ import { SkillsCard } from '../components/SkillsCard';
 
 const Skills = () => {
   return (
-    <div className="body-container">
-      <div className="skills -left">
-        {/* <div className="col-6"> */}
-        <h1>Some of my skills:</h1>
-        <div className="row fade-in">
-          <SkillsCard />
+    <>
+      <h3>Some of my skills:</h3>
+      <div className="row fade-in">
+        <SkillsCard />
+        <div className="wrapper">
+          <Cube />
         </div>
       </div>
-      <div className=" cube wrapper -right">
-        <Cube />
-      </div>
-    </div>
-    // </div>
+    </>
   );
 };
 

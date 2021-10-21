@@ -6,8 +6,6 @@ const AnimatedLogo = () => {
     // <img src={logo} alt='logo animation' id="animatedLogo"/>
     <div className="animated-logo">
       <svg
-        width="59"
-        height="52"
         id="animatedLogo"
         viewBox="0 0 59 52"
         fill="none"

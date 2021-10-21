@@ -15,25 +15,28 @@ const Contact = () => {
     reset,
   } = useForm({ defaultValues: defaultformDetails });
 
-  console.log('formErrors', errors);
-
-  const sendMessage = ({ name, email, message }) => {
-    window.location.href =
-      'https://us-central1-wesportfolio.cloudfunctions.net/sendMail?name=' +
-      name +
-      '&email=' +
-      email +
-      '&message=' +
-      message +
-      '';
-  };
+  const sendMessage = async (data) =>
+    await fetch(
+      'https://us-central1-wesportfolio.cloudfunctions.net/sendMail',
+      {
+        method: 'POST',
+        body: JSON.stringify(data),
+        headers: {
+          'Content-type': 'application/json; charset=UTF-8',
+        },
+      }
+    );
 
   const onSubmit = async (formData) => {
     const response = await sendMessage(formData);
-
-    console.log(response);
-
-    // reset();
+    if (response.ok) {
+      console.log('form sumbmission successful');
+      reset();
+    } else {
+      alert(
+        'There was an error sumbitting your message, please try again.'
+      );
+    }
   };
 
   return (
@@ -52,6 +55,9 @@ const Contact = () => {
                   'I need a name so I can address you properly.',
               })}
             />
+            {errors.name && (
+              <p className="small">{errors.name.message}</p>
+            )}
           </div>
           <div className="form-group">
             <label htmlFor="email">Email</label>
@@ -64,6 +70,11 @@ const Contact = () => {
                   'I need an email address to respond to.',
               })}
             />
+            {errors.email && (
+              <p className="small">
+                {errors.email.message}
+              </p>
+            )}
           </div>
           <div className="form-group">
             <label htmlFor="message">Message</label>

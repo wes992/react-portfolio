@@ -25,6 +25,6 @@ yarn-error.log*
 .vscode/launch.json
 yarn.lock
 .firebase
-functions
 firebase.json
 .firebaserc
+functions/config.js

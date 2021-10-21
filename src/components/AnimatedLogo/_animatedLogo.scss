@@ -1,11 +1,16 @@
 @import '../../variables';
 
+.animated-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 #animatedLogo {
-  height: 125px;
-  width: 143.75px;
+  width: 50%;
   // position: absolute;
   // left: 50%;
-  // bottom: 20%;
+  // bottom: 20%;;
   transform: rotateZ(-30deg);
   animation: fill 1s ease both 2s 1;
 

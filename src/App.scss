@@ -116,11 +116,11 @@ h5.fade-in {
   flex-direction: column;
   justify-content: space-around;
 
-  .row {
+  .main {
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
-    padding: 5rem 1rem;
 
     .animated-logo {
       padding: 3rem 0;
@@ -169,10 +169,7 @@ h5.fade-in {
   }
 
   .animated-logo {
-    display: flex;
     flex: 1;
-    justify-content: center;
-    align-items: center;
   }
 }
 
