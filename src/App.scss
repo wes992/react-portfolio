@@ -7,7 +7,6 @@
 @import '~bootstrap/scss/bootstrap';
 
 body {
-  padding: 0 2rem;
   background-color: $main-background !important;
   color: $main-text;
   font-family: $main-font;
@@ -19,10 +18,13 @@ body {
   display: flex;
 }
 
-.project-list {
-  width: 100%;
+.header {
+  margin-left: 1rem;
+}
+.item-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 #modal {
@@ -49,9 +51,10 @@ body {
   opacity: 0;
   position: absolute;
   max-height: 50%;
-  top: 10%;
+  max-width: 80%;
+  top: 20%;
   transform: scale(0.5);
-  transition: all 0.5s ease-out;
+  transition: all 0.75s ease;
 
   &.open {
     opacity: 1;
@@ -65,13 +68,22 @@ body {
   width: 100%;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-around;
   margin-bottom: map-get($spacers, 5);
 
   &__link {
+    flex: 50%;
     color: $main-blue;
     font-size: 1.5rem;
     transition: all 0.5s ease-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include media-breakpoint-up(sm) {
+      flex: 30%;
+    }
 
     &:hover {
       color: $main-blue;
@@ -79,6 +91,26 @@ body {
       animation: zoom 0.5s forwards;
     }
   }
+
+  .demo-credentials {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    flex: 100%;
+
+    @include media-breakpoint-up(sm) {
+      flex: 30%;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: map-get($spacers, 5);
 }
 
 .portrait {
@@ -158,6 +190,7 @@ h5.fade-in {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  padding: 2rem;
 
   @include media-breakpoint-up(sm) {
     flex-direction: row;
