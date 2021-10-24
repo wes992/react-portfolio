@@ -16,7 +16,7 @@ const ProjectModal = ({ show, onClose, ...project }) => {
       className={
         show === _id ? 'modalWindow open' : 'modalWindow'
       }
-      onClick={onClose}
+      onClick={(e) => !!e.target.id && onClose()}
     >
       <video
         src={demo}

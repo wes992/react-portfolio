@@ -1,124 +1,104 @@
-import React, { Component } from 'react';
-import axios from 'axios';
+import React from 'react';
 import { AnimatedLogo } from '../components/AnimatedLogo';
+import { useForm } from 'react-hook-form';
+import { Social } from '../components/Social';
 
-class Contact extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      name: '',
-      email: '',
-      message: '',
-    };
-  }
+const Contact = () => {
+  const defaultformDetails = {
+    name: '',
+    email: '',
+    message: '',
+  };
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+    reset,
+  } = useForm({ defaultValues: defaultformDetails });
 
-  handleSubmit(e) {
-    e.preventDefault();
+  const sendMessage = async (data) =>
+    await fetch(
+      'https://us-central1-wesportfolio.cloudfunctions.net/sendMail',
+      {
+        method: 'POST',
+        body: JSON.stringify(data),
+        headers: {
+          'Content-type': 'application/json; charset=UTF-8',
+        },
+      }
+    );
 
-    const data = {
-      name: this.state.name,
-      email: this.state.email,
-      message: this.state.message,
-    };
+  const onSubmit = async (formData) => {
+    const response = await sendMessage(formData);
+    if (response.ok) {
+      console.log('form sumbmission successful');
+      reset();
+    } else {
+      alert(
+        'There was an error sumbitting your message, please try again.'
+      );
+    }
+  };
 
-    axios
-      .post(
-        'https://us-central1-wesportfolio.cloudfunctions.net/submit',
-        data
-      )
-      .then((response) => {
-        if (response.data.status === 'success') {
-          alert('Message Sent.');
-          this.resetForm();
-        } else if (response.data.status === 'fail') {
-          alert('Message failed to send.');
-        }
-      });
-
-    // preventDefault();
-    // axios({
-    //   method: "POST",
-    //   url:"/send",
-    //   data:  this.state
-    // }).then((response)=>{
-    //   if (response.data.status === 'success'){
-    //     alert("Message Sent.");
-    //     this.resetForm()
-    //   }else if(response.data.status === 'fail'){
-    //     alert("Message failed to send.")
-    //   }
-    // })
-  }
-
-  // resetForm(){
-
-  //    this.setState({name: '', email: '', message: ''})
-  // }
-
-  render() {
-    return (
-      <div>
-        <div className="body-container">
-          <h1 className="slide">Send me a Message</h1>
-          <form
-            id="contact-form"
-            className="fade-in flex"
-            onSubmit={this.handleSubmit.bind(this)}
-            method="POST"
+  return (
+    <>
+      <h3 className="header slide">Send me a Message</h3>
+      <div className="contact-form">
+        <form className="fade-in">
+          <div className="form-group">
+            <label htmlFor="name">Name</label>
+            <input
+              type="text"
+              className="form-control"
+              id="name"
+              {...register('name', {
+                required:
+                  'I need a name so I can address you properly.',
+              })}
+            />
+            {errors.name && (
+              <p className="small">{errors.name.message}</p>
+            )}
+          </div>
+          <div className="form-group">
+            <label htmlFor="email">Email</label>
+            <input
+              type="email"
+              className="form-control"
+              id="email"
+              {...register('email', {
+                required:
+                  'I need an email address to respond to.',
+              })}
+            />
+            {errors.email && (
+              <p className="small">
+                {errors.email.message}
+              </p>
+            )}
+          </div>
+          <div className="form-group">
+            <label htmlFor="message">Message</label>
+            <textarea
+              className="form-control"
+              rows="4"
+              id="message"
+              {...register('message')}
+            />
+          </div>
+          <button
+            type="button"
+            className="btn btn-primary"
+            onClick={handleSubmit(onSubmit)}
           >
-            <div className="form-group">
-              <label htmlFor="name">Name</label>
-              <input
-                type="text"
-                className="form-control col-6"
-                id="name"
-                value={this.state.name}
-                onChange={this.onNameChange.bind(this)}
-              />
-            </div>
-            <div className="form-group">
-              <label htmlFor="email">Email</label>
-              <input
-                type="email"
-                className="form-control col-6"
-                id="email"
-                value={this.state.email}
-                onChange={this.onEmailChange.bind(this)}
-              />
-            </div>
-            <div className="form-group">
-              <label htmlFor="message">Message</label>
-              <textarea
-                className="form-control col-6"
-                rows="4"
-                id="message"
-                value={this.state.message}
-                onChange={this.onMessageChange.bind(this)}
-              />
-            </div>
-            <button
-              type="submit"
-              className="btn btn-primary"
-            >
-              Email Me
-            </button>
-          </form>
-        </div>
+            Email Me
+          </button>
+        </form>
         <AnimatedLogo />
       </div>
-    );
-  }
+      <Social />
+    </>
+  );
+};
 
-  onNameChange(event) {
-    this.setState({ name: event.target.value });
-  }
-
-  onEmailChange(event) {
-    this.setState({ email: event.target.value });
-  }
-
-  onMessageChange(event) {
-    this.setState({ message: event.target.value });
-  }
-}
 export { Contact };

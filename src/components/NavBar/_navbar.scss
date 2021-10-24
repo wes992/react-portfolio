@@ -6,24 +6,69 @@
   width: 100%;
   padding-top: map-get($spacers, 3);
 
-  ul {
-    display: flex;
-    justify-content: space-around;
-  }
-
   @include media-breakpoint-up(sm) {
     text-align: center;
     min-height: 100vh;
     max-width: 8%;
     overflow: hidden;
+  }
+}
 
-    ul {
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-content: center;
-      justify-content: space-around;
+nav {
+  height: 10vh;
+  position: relative;
+
+  .line {
+    width: 2rem;
+    height: 3px;
+    background: white;
+    margin: 0.4rem;
+  }
+
+  .hamburger {
+    position: absolute;
+    color: white;
+    right: 5%;
+    top: 50%;
+    transform: translate(-5%, -50%);
+    z-index: 2;
+
+    @include media-breakpoint-up(sm) {
+      display: none;
     }
+  }
+}
+
+.navbar-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.9);
+  height: 100vh;
+  width: 100%;
+  clip-path: circle(100px at 90% -20%);
+  -webkit-clip-path: circle(100px at 90% -20%);
+  transition: all 0.8s ease-out;
+
+  @include media-breakpoint-up(sm) {
+    flex-direction: row;
+    width: 50%;
+    height: 100%;
+    margin-left: auto;
+    position: relative;
+    clip-path: none;
+    -webkit-clip-path: none;
+    transition: none;
+    background: transparent;
+  }
+
+  &.open {
+    clip-path: circle(1000px at 90% -10%);
+    -webkit-clip-path: circle(1000px at 90% -10%);
+    z-index: 1;
   }
 }
 
@@ -35,47 +80,5 @@
     text-decoration: none;
     color: $main-blue;
     animation: rubberBand 1s forwards;
-  }
-}
-
-nav a,
-.social-container a {
-  color: $main-text;
-
-  &:hover {
-    color: $main-background;
-
-    svg {
-      display: none;
-    }
-
-    b {
-      color: $main-blue;
-      display: inline-block;
-    }
-  }
-}
-
-.iconSwitch {
-  height: 60px;
-
-  &:hover {
-    text-decoration: none;
-    color: $main-blue;
-  }
-
-  &:visited {
-    text-decoration: none;
-  }
-  &.active {
-    svg.nav-item {
-      display: none;
-    }
-
-    b {
-      display: block;
-      color: $main-blue;
-      // font-size: 1.2rem;
-    }
   }
 }

@@ -6,7 +6,7 @@ const Text = ({ children }) => (
   <div className="animated-container">
     <AnimatedText>{children}</AnimatedText>
     <h5 className="fade-in">
-      Full-stack | Jr. Dev | Self-taught{' '}
+      Front End Developer | ReactJS
     </h5>
   </div>
 );
