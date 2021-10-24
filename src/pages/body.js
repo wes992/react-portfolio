@@ -10,9 +10,7 @@ const Body = () => {
         <Text>Hello, I'm Wes, a Web Developer.</Text>
         <AnimatedLogo />
       </div>
-      <div className="social">
-        <Social />
-      </div>
+      <Social />
     </div>
   );
 };

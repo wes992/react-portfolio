@@ -1,6 +1,7 @@
 import React from 'react';
 import { AnimatedLogo } from '../components/AnimatedLogo';
 import { useForm } from 'react-hook-form';
+import { Social } from '../components/Social';
 
 const Contact = () => {
   const defaultformDetails = {
@@ -95,6 +96,7 @@ const Contact = () => {
         </form>
         <AnimatedLogo />
       </div>
+      <Social />
     </>
   );
 };
